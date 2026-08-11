@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "c1034-opsdesk"
+version = "1.0.0"
+description = "Executable lab kit for C1034 Multi Agents System with AutoGen"
+requires-python = ">=3.10"
+
+[project.scripts]
+opsdesk-c1034 = "opsdesk.cli:main"
+
+[tool.setuptools]
+packages = ["opsdesk"]

@@ -130,12 +130,17 @@ python -m opsdesk.cli tool-agent --ticket INC-1001 --offline
 python -m opsdesk.cli index
 python -m opsdesk.cli retrieve --query "What approvals are required for VPN access?" --expect POL-VPN-01
 python -m opsdesk.cli rag --query "What approvals are required for VPN access?" --offline
+python -m opsdesk.cli team-contract-init --force
+python -m opsdesk.cli team-contract-validate
 python -m opsdesk.cli team-round-robin --offline
 python -m opsdesk.cli team-selector --offline
+python -m opsdesk.cli operations-init --force
+python -m opsdesk.cli operations-validate
+python -m opsdesk.cli safety-check
 python -m opsdesk.cli release-check --offline
 ```
 
-The editable install makes the `opsdesk` package available from the repository root on Windows, macOS and Linux. Every lab states the expected evidence for its checkpoint.
+Complete the generated `.course_state/lab08-operations.md` record before the final release check; an unchanged template deliberately blocks `READY FOR GUIDED DEMO`. The editable install makes the `opsdesk` package available from the repository root on Windows, macOS and Linux. Every lab states the expected evidence for its checkpoint.
 
 ## Safe Use
 
