@@ -1,36 +1,59 @@
-# Multi Agents System with AutoGen (C1034) — Hands-On Labs
+# Labs — Multi AI Agents for Content Creation (Claude Edition)
 
-8 labs across 3 topics · 2 days · 15 instructional hours (16 scheduled hours including tea breaks)
+C1034 · 15 labs · build an AI marketing team, then run five campaigns with it.
 
-Work through the labs in order — each one builds on the artifacts you produced in the labs before it.
+## The scenario
 
+Rachel Goh founded Horizon Wealth Planning in 2010. Fifteen years and 1,200
+clients later, almost every new client still comes through a referral — and
+referrals are slowing. Younger Singaporeans look for money help on LinkedIn,
+Facebook, YouTube and in their inbox, and Horizon is invisible there.
 
-## Topic 1 — Introduction to AutoGen and CrewAI
+Rachel has a website, three planners, a part-time marketer (Jun Wei) and
+S$4,000 a month. She wants 40 booked free chats a month by March 2027
+— without hiring a marketing team. So you will build her one, made of AI
+agents, with Claude and Claude Code:
 
-| # | Lab | Tools | You Build |
-|---|-----|-------|-----------|
-| 1 | [Verify AutoGen and Run a First Agent](lab-01-verify-autogen-and-run-a-first-agent.md) | Python 3.10+, virtual environment, AutoGen AgentChat 0.7.5, AutoGen Extensions replay client, OpsDesk CLI | A ready environment plus .course_state/lab01-environment.json and lab01-first-agent.json containing the first reproducible AgentChat trace. |
-| 2 | [Add a Typed Ticket Lookup Tool](lab-02-add-a-typed-ticket-lookup-tool.md) | AssistantAgent, FunctionTool schema, FunctionCall, ToolCallExecutionEvent, ReplayChatCompletionClient, synthetic tickets.json | A verified lookup_ticket contract plus .course_state/lab02-tool-agent.json containing ToolCallRequestEvent, ToolCallExecutionEvent and the exact synthetic result. |
+  Marketing Team Lead  — plans, assigns, checks, hands to a person
+  Growth Strategist    — research, positioning, briefs, storyboards
+  Content Creator      — posts, newsletter, scripts, page copy
+  Creative Designer    — images, thumbnails, the video
+  Website Designer     — landing pages, published and QA-checked
+  Growth Analyst       — personas, cadence, results, weekly report
 
-## Topic 2 — Retrieval-Augmented Generation (RAG)
+First you form the team: instructions, skills and connectors for each agent.
+Then the team runs five campaigns together. Financial content is regulated,
+so a person approves every piece before it goes out. The data is fictitious
+but consistent, and every email address resolves to your own inbox.
 
-| # | Lab | Tools | You Build |
-|---|-----|-------|-----------|
-| 3 | [Prepare a Source-Traceable Knowledge Index](lab-03-prepare-a-source-traceable-knowledge-index.md) | Markdown source, source metadata, Python tokenizer, lexical index, JSON manifest, OpsDesk knowledge module | .course_state/opsdesk-index.json and lab03-index-manifest.json with five coherent chunks and the expected POL-/PROC- source identifiers. |
-| 4 | [Evaluate Retrieval with Stable Questions](lab-04-evaluate-retrieval-with-stable-questions.md) | Lexical ranking, inverse document frequency, top-k retrieval, stable questions, source IDs, pytest | Three repeatable retrieval observations covering VPN approval, critical response time and embedded-instruction handling, with expected top-one source evidence. |
-| 5 | [Build a Grounded RAG Agent](lab-05-build-a-grounded-rag-agent.md) | AssistantAgent, retrieval FunctionTool, reflect_on_tool_use, max_tool_iterations, source citations, insufficient-evidence route | .course_state/lab05-rag-agent.json containing the RAG tool trajectory, grounded final text, source identifiers and stop reason for the shared VPN question. |
+## The labs
 
-## Topic 3 — Implementing a Multi-Agent AI Workflow
+| # | Lab | Day | Use | Time |
+|---|---|---|---|---|
+| 01 | [Build Your Marketing Agent Team](lab-01-studio-and-website/README.md) | 1 | **Claude Code** | 30 min |
+| 02 | [Form the Team: Instructions for Each Agent](lab-02-agent-instructions/README.md) | 1 | **Claude Code** | 40 min |
+| 03 | [Give Each Agent Its Skills](lab-03-agent-skills/README.md) | 1 | **Claude Code** | 45 min |
+| 04 | [Connect the Tools Each Agent Needs](lab-04-agent-connectors/README.md) | 1 | **Claude Code** | 40 min |
+| 05 | [Campaign 1: Research to Storyboard, with Subagents](lab-05-campaign-1-research-to-storyboard/README.md) | 1 | **Claude Code** | 45 min |
+| 06 | [Growth Analyst: Personas from Evidence](lab-06-personas-from-evidence/README.md) | 1 | **Claude Code** | 40 min |
+| 07 | [Growth Analyst and Strategist: Cadence and Calendar](lab-07-cadence-and-calendar/README.md) | 1 | **Claude Code** | 35 min |
+| 08 | [Content Creator: A Quick Blog Article](lab-08-blog-article/README.md) | 1 | **Claude Code** | 40 min |
+| 09 | [The Lead Magnet: a Checklist and Its Welcome Emails](lab-09-lead-magnet/README.md) | 2 | **Claude Code** | 50 min |
+| 10 | [Campaign 2: Social Media Posts (Demo)](lab-10-campaign-2-social-week/README.md) | 2 | **Claude Code** | 50 min |
+| 11 | [Campaign 3: Newsletter and a Landing Page](lab-11-campaign-3-newsletter-and-landing-page/README.md) | 2 | **Claude Code** | 60 min |
+| 12 | [Campaign 4: The YouTube Explainer](lab-12-campaign-4-youtube-explainer/README.md) | 2 | **Claude Code** | 55 min |
+| 13 | [Campaign 5: Always On — the Weekly Growth Report](lab-13-campaign-5-weekly-growth-report/README.md) | 2 | **Claude Code** | 45 min |
+| 14 | [Measure, Govern and Write the Team Playbook](lab-14-team-playbook/README.md) | 2 | **Claude Code** | 50 min |
+| 15 | [Agent Teams: A Strategy Debate and a QA Loop](lab-15-agent-teams-debate-and-qa-loop/README.md) | 2 | **Claude Code** | 40 min |
 
-| # | Lab | Tools | You Build |
-|---|-----|-------|-----------|
-| 6 | [Design Roles and Run a Round-Robin Team](lab-06-design-roles-and-run-a-round-robin-team.md) | AssistantAgent roles, RoundRobinGroupChat, ExactTextTermination, MaxMessageTermination, shared context, TaskResult | .course_state/lab06-round-robin.json with participant names, observed speaker sequence, message count, stop reason and bounded status for the writer-reviewer workflow. |
-| 7 | [Route Specialists with SelectorGroupChat](lab-07-route-specialists-with-selectorgroupchat.md) | SelectorGroupChat, selector_func, role descriptions, shared context, ExactTextTermination, MaxMessageTermination, replay clients | .course_state/lab07-selector-team.json with four participant contracts, the observed route, approval evidence, message count, stop reason and bounded status. |
-| 8 | [Integrate and Verify the OpsDesk Workflow](lab-08-integrate-and-verify-the-opsdesk-workflow.md) | Offline regression, retrieval cases, RAG trajectory, AgentChat teams, pytest, pip check, Git secret scan, operational readiness | .course_state/lab08-release-check.json plus a learner-authored operational record covering evidence, owners, pause triggers, last known-good identity and recovery for the complete OpsDesk workflow. |
+## Before you start
 
----
+- The Claude desktop app on a Pro plan or above, signed in with your claude.ai account. Every lab says whether to use **Claude** or **Claude Code** — both are in the app.
+- Installed by the trainer before class (you never type commands): Node.js, Python and ffmpeg, which run the approval gate and the video.
+- A personal Google account for Drive and Gmail; optional LinkedIn, Facebook Page and YouTube accounts for live publishing.
+- One working folder, `horizon-studio/`, from Lab 1 to Lab 15 — ready-made in this pack with every lab's data in `data/`. Choose it in Claude (Project or folder → Add folder); do not create one.
+- `.md` files are plain text for Claude to read; each has a `.pdf` twin with the same name for you to read.
 
-> Use only the supplied synthetic incidents and handbook. Keep tools read-only, store optional provider credentials outside Git, and never place a secret in prompts, screenshots, commands or saved evidence.
+## Safety
 
-
-_Tertiary Infotech Academy Pte Ltd · C1034 · v1.0 (11 August 2026)_
+Use only this lab's synthetic data and your own accounts. Never paste a real API key, password, token or client data into a prompt or a file. Every email address in the data must resolve to your own inbox. Nothing is published or sent without a person approving that exact version.

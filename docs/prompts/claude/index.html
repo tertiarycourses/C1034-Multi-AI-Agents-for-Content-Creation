@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="en-SG"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Lab Prompts · Claude</title>
+<meta name="description" content="Copy-ready prompts for every lab of Multi AI Agents for Content Creation (Claude Edition).">
+<style>
+:root{--bg:#FAF9F5;--panel:#fff;--ink:#21201C;--muted:#6B6862;--rule:#DCD8CF;
+--accent:#C2603F;--accent-bg:#FBF4EE;--ok:#2F6B69;--mark:#FCE9B8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--bg:#1B1A17;--panel:#24231F;--ink:#F0EEE8;--muted:#B5B0A6;--rule:#3A3832;
+--accent:#E08A6B;--accent-bg:#2C2520;--ok:#6CC0BC;--mark:#5A4A1E}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Calibri,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:24px 16px 80px}
+h1,h2{font-family:Cambria,Georgia,serif;font-weight:600;line-height:1.2}
+h1{font-size:30px;margin:4px 0 6px}h2{font-size:26px;margin:4px 0 8px}
+h3{font-size:15px;letter-spacing:.06em;text-transform:uppercase;
+color:var(--accent);margin:28px 0 10px}
+.eyebrow{margin:0;color:var(--accent);font-size:13px;font-weight:700;
+letter-spacing:.08em;text-transform:uppercase}
+.sub{color:var(--muted);margin:0 0 18px}
+.edition a{color:var(--accent)}
+nav{position:sticky;top:0;z-index:2;background:var(--bg);padding:10px 0;
+border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:6px}
+@media (max-width:600px){nav{flex-wrap:nowrap;overflow-x:auto}
+nav a{flex:none}}
+nav a{display:inline-block;min-width:44px;text-align:center;padding:8px 10px;
+border:1.5px solid var(--rule);border-radius:999px;color:var(--ink);
+text-decoration:none;font-weight:600;font-size:15px}
+nav a[aria-current="true"]{background:var(--accent);border-color:var(--accent);
+color:#fff}
+.lab{padding-top:22px}
+.use{color:var(--muted);margin:0 0 10px}
+details{background:var(--panel);border:1px solid var(--rule);border-radius:10px;
+padding:8px 14px}
+summary{cursor:pointer;font-weight:600}
+details ol{margin:8px 0 4px;padding-left:22px}details li{margin:6px 0}
+.hint{margin:0 0 10px;color:var(--muted);font-size:15px}
+mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 2px}
+.prompt{background:var(--panel);border:1px solid var(--rule);
+border-left:4px solid var(--accent);border-radius:10px;margin:0 0 14px;
+overflow:hidden}
+.prompt header{display:flex;justify-content:space-between;align-items:center;
+gap:12px;padding:10px 14px;background:var(--accent-bg)}
+.pname{font-weight:700;margin-right:8px}.ptool{color:var(--muted);font-size:15px}
+pre{margin:0;padding:14px;white-space:pre-wrap;word-wrap:break-word;
+font:15px/1.5 ui-monospace,Menlo,Consolas,monospace}
+.copy{flex:none;font:inherit;font-weight:700;font-size:15px;color:#fff;
+background:var(--accent);border:0;border-radius:8px;padding:9px 18px;
+cursor:pointer;min-height:40px}
+.copy:hover{filter:brightness(1.08)}
+.copy.done{background:var(--ok)}
+.copy.small{font-size:13px;padding:5px 12px;min-height:32px}
+.ask ul{list-style:none;padding:0;margin:0}
+.ask li{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;
+background:var(--panel);border:1px solid var(--rule);border-radius:10px;
+padding:10px 14px;margin:0 0 8px}
+.ask .q{flex:1 1 300px}
+.when{flex-basis:100%;font-size:13px;font-weight:700;color:var(--accent)}
+.ask p{color:var(--muted);margin:0 0 10px;font-size:15px}
+footer{margin-top:40px;color:var(--muted);font-size:14px}
+.pick{margin:28px 0;padding:18px 20px;border:2px dashed var(--accent);
+border-radius:12px;font-size:18px;font-weight:600}
+</style></head><body><div class="wrap">
+<p class="eyebrow">C1034 · Claude Edition · v1.0</p>
+<h1>Lab Prompts</h1>
+<p class="sub">Multi AI Agents for Content Creation. Pick your lab, click <b>Copy</b>, then paste
+into Claude.</p>
+<nav aria-label="Labs"><a href="#lab-1">1</a><a href="#lab-2">2</a><a href="#lab-3">3</a><a href="#lab-4">4</a><a href="#lab-5">5</a><a href="#lab-6">6</a><a href="#lab-7">7</a><a href="#lab-8">8</a><a href="#lab-9">9</a><a href="#lab-10">10</a><a href="#lab-11">11</a><a href="#lab-12">12</a><a href="#lab-13">13</a><a href="#lab-14">14</a><a href="#lab-15">15</a></nav>
+<p id="pick" class="pick">Which lab are you on? Click its number above — every
+prompt is labelled with its lab, so check it before you copy.</p>
+<section class="lab" data-lab="1"><p class="eyebrow">Lab 1 · Day 1 · 30 min</p><h2>Build Your Marketing Agent Team</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>Choose Code mode and the folder</b> In the Claude desktop app switch to Code mode (the &lt;/&gt; button at the top), not Work mode — Code shows every file and opens artifacts beside the chat. Under Project or folder choose Add folder (not New project) and pick the ready-made labs/horizon-studio.</li><li><b>Trust it</b> Sign in with your claude.ai account and trust the folder. Click the session title at the top and rename it &quot;Lab 1&quot; — every lab gets its own session.</li><li><b>Plan your team</b> Copy and paste Prompt A. Answer as Horizon&#x27;s owner and pick your team — keep the six charter roles. It is a plan only: Lab 2 builds the agents.</li><li><b>Write the charter</b> After Claude saves data/team-design.md, copy and paste Prompt B. Open CLAUDE.md — every agent reads it.</li><li><b>Open the website</b> Ask: &quot;Start my website.&quot; It opens at http://localhost:8080/ — your own copy of Horizon&#x27;s website; Labs 8 and 9 add to it, and every post links to it. Check the calculator shows S$693,138.</li></ol></details><h3>The prompts</h3><article class="prompt ask1"><header><div><span class="pname">Lab 1 · Ask</span><span class="ptool">Open the website</span></div><button class="copy" type="button" data-copy="Start my website.">Copy</button></header><pre>Start my website.</pre></article><article class="prompt ask1"><header><div><span class="pname">Lab 1 · Ask</span><span class="ptool">If needed: The website does not open</span></div><button class="copy" type="button" data-copy="Start my website again.">Copy</button></header><pre>Start my website again.</pre></article><article class="prompt"><header><div><span class="pname">Lab 1 · Prompt A</span><span class="ptool">Claude Code: plan your team</span></div><button class="copy" type="button" data-copy="Act as a marketing consultant. Interview me, the
+owner of Horizon Wealth Planning, to plan my AI
+marketing team. Ask one question at a time and wait
+for my answer: my goal, what success looks like by
+March 2027, who we want to reach, which channels we
+use, how much we publish each week, and who approves
+before anything goes out.
+Then list 8 to 10 team members I could have,
+numbered, each with a one-line job. Include the six
+roles in data/team-charter.md and mark the ones you
+recommend. Wait for me to choose.
+Save my answers and my chosen team, with each
+member&#x27;s job, to data/team-design.md. This is a
+plan only: do not create any agent files yet.">Copy</button></header><pre>Act as a marketing consultant. Interview me, the
+owner of Horizon Wealth Planning, to plan my AI
+marketing team. Ask one question at a time and wait
+for my answer: my goal, what success looks like by
+March 2027, who we want to reach, which channels we
+use, how much we publish each week, and who approves
+before anything goes out.
+Then list 8 to 10 team members I could have,
+numbered, each with a one-line job. Include the six
+roles in data/team-charter.md and mark the ones you
+recommend. Wait for me to choose.
+Save my answers and my chosen team, with each
+member&#x27;s job, to data/team-design.md. This is a
+plan only: do not create any agent files yet.</pre></article><article class="prompt"><header><div><span class="pname">Lab 1 · Prompt B</span><span class="ptool">Claude Code: the charter</span></div><button class="copy" type="button" data-copy="Read data/team-charter.md, data/team-design.md
+and data/business-brief.md. Write CLAUDE.md for this
+studio in four sections — What this is, The team,
+Rules, Files — under 60 lines. The team is the one
+I chose in data/team-design.md. Rules: every number
+comes from data/facts-2026.md; every piece passes
+fact-check and fin-compliance; nothing is published
+or sent without a person&#x27;s approval (the one
+exception: a review email to the approver); anything
+shown to me is in plain English for a business owner,
+with no codes, IDs, file names or line numbers.
+In Files, add two lines:
+- Our copy of the site, which we edit: web/site/.
+  &quot;Start my website&quot; runs scripts/serve-site.mjs in
+  the background and opens http://localhost:8080/
+- Every post links to http://localhost:8080/ with
+  UTM tags, never to a claude.ai artifact link.">Copy</button></header><pre>Read data/team-charter.md, data/team-design.md
+and data/business-brief.md. Write CLAUDE.md for this
+studio in four sections — What this is, The team,
+Rules, Files — under 60 lines. The team is the one
+I chose in data/team-design.md. Rules: every number
+comes from data/facts-2026.md; every piece passes
+fact-check and fin-compliance; nothing is published
+or sent without a person&#x27;s approval (the one
+exception: a review email to the approver); anything
+shown to me is in plain English for a business owner,
+with no codes, IDs, file names or line numbers.
+In Files, add two lines:
+- Our copy of the site, which we edit: web/site/.
+  &quot;Start my website&quot; runs scripts/serve-site.mjs in
+  the background and opens http://localhost:8080/
+- Every post links to http://localhost:8080/ with
+  UTM tags, never to a claude.ai artifact link.</pre></article></section><section class="lab" data-lab="2"><p class="eyebrow">Lab 2 · Day 1 · 40 min</p><h2>Form the Team: Instructions for Each Agent</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 2&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Read the roles</b> Open role-specs.md: one Lead and five specialists, each with a job, skills, connectors and limits.</li><li><b>Write the instructions</b> Copy and paste Prompt A. It builds the five specialists from the charter; extra ideas stay in team-design.md.</li><li><b>See the team</b> After the five files appear in .claude/agents/, copy and paste Prompt B. The Lead is not a file — it is you, in this session.</li><li><b>Read one closely</b> Open .claude/agents/content-creator.md. Is the &quot;Never&quot; section strict enough for a regulated firm?</li><li><b>Meet the team</b> After the list shows five agents, copy and paste Prompt C. Each agent introduces itself in one line — in its own context.</li><li><b>Tighten one</b> Change one instruction you disagree with and save it. It is your team.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 2 · Prompt A</span><span class="ptool">Claude Code: five subagents</span></div><button class="copy" type="button" data-copy="Read data/role-specs.md. Create five project
+subagents in .claude/agents/ — growth-strategist,
+content-creator, creative-designer, website-designer
+and growth-analyst. Each file has:
+- frontmatter: name; a description that says when to
+  use it; tools; model (opus for the strategist,
+  sonnet for the others)
+- a body with: the job, what it reads, what it
+  delivers, the connectors it may use, what it must
+  never do, and how it reports back.
+No skills line yet — we add skills in Lab 3.">Copy</button></header><pre>Read data/role-specs.md. Create five project
+subagents in .claude/agents/ — growth-strategist,
+content-creator, creative-designer, website-designer
+and growth-analyst. Each file has:
+- frontmatter: name; a description that says when to
+  use it; tools; model (opus for the strategist,
+  sonnet for the others)
+- a body with: the job, what it reads, what it
+  delivers, the connectors it may use, what it must
+  never do, and how it reports back.
+No skills line yet — we add skills in Lab 3.</pre></article><article class="prompt"><header><div><span class="pname">Lab 2 · Prompt B</span><span class="ptool">Claude Code: see the team</span></div><button class="copy" type="button" data-copy="List the subagents in .claude/agents/. For each,
+show the file name, the name, the one-line
+description and the model, in a table. Then confirm
+there are five, and that none of them is the
+Marketing Team Lead — the Lead is this session.
+If any other file is there, list it and ask me
+before moving it to _archive/.">Copy</button></header><pre>List the subagents in .claude/agents/. For each,
+show the file name, the name, the one-line
+description and the model, in a table. Then confirm
+there are five, and that none of them is the
+Marketing Team Lead — the Lead is this session.
+If any other file is there, list it and ask me
+before moving it to _archive/.</pre></article><article class="prompt"><header><div><span class="pname">Lab 2 · Prompt C</span><span class="ptool">Claude Code: meet the team</span></div><button class="copy" type="button" data-copy="Use each of the five subagents once, in parallel.
+Ask each: &quot;In one line, who are you, and what is
+the first thing you would do for Horizon&#x27;s goal of
+40 booked chats a month?&quot; Show me the five answers
+in a table.">Copy</button></header><pre>Use each of the five subagents once, in parallel.
+Ask each: &quot;In one line, who are you, and what is
+the first thing you would do for Horizon&#x27;s goal of
+40 booked chats a month?&quot; Show me the five answers
+in a table.</pre></article></section><section class="lab" data-lab="3"><p class="eyebrow">Lab 3 · Day 1 · 45 min</p><h2>Give Each Agent Its Skills</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 3&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Read the spec</b> skills-spec.md lists the twenty skills and who owns each.</li><li><b>Create the skills</b> Copy and paste Prompt A.</li><li><b>Wire them up</b> After the twenty skills appear in .claude/skills/, copy and paste Prompt B, then C to list every skill. The Lead&#x27;s two go in CLAUDE.md, not a file.</li><li><b>Test without naming</b> In a new session ask: &quot;Write a Facebook post about the free Money Check-up Checklist.&quot; Ask which skills were used.</li><li><b>Break it on purpose</b> Ask for a post that says &quot;guaranteed 8% a year&quot;. fin-compliance must flag it as Critical.</li></ol></details><h3>The prompts</h3><p class="hint">Replace the <mark>highlighted</mark> parts before you send.</p><article class="prompt"><header><div><span class="pname">Lab 3 · Prompt A</span><span class="ptool">Claude Code: twenty skills</span></div><button class="copy" type="button" data-copy="Read data/skills-spec.md. Create the twenty
+skills in .claude/skills/&lt;name&gt;/SKILL.md. Each has
+frontmatter (name, and a description that starts
+&quot;Use when…&quot;) and short numbered steps, under 80
+lines. Use data/brand.md, data/channel-formats.md,
+data/facts-2026.md and data/compliance-checklist.md
+as the sources — do not invent rules.">Copy</button></header><pre>Read data/skills-spec.md. Create the twenty
+skills in .claude/skills/<mark>&lt;name&gt;</mark>/SKILL.md. Each has
+frontmatter (name, and a description that starts
+&quot;Use when…&quot;) and short numbered steps, under 80
+lines. Use data/brand.md, data/channel-formats.md,
+data/facts-2026.md and data/compliance-checklist.md
+as the sources — do not invent rules.</pre></article><article class="prompt"><header><div><span class="pname">Lab 3 · Prompt B</span><span class="ptool">Claude Code: wire them up</span></div><button class="copy" type="button" data-copy="Add a skills: list to each subagent in
+.claude/agents/ with its skills from
+data/skills-spec.md. Leave any other agent file as
+it is. Add to CLAUDE.md that the Lead (this session)
+runs fact-check and fin-compliance on everything
+before showing it to me.">Copy</button></header><pre>Add a skills: list to each subagent in
+.claude/agents/ with its skills from
+data/skills-spec.md. Leave any other agent file as
+it is. Add to CLAUDE.md that the Lead (this session)
+runs fact-check and fin-compliance on everything
+before showing it to me.</pre></article><article class="prompt"><header><div><span class="pname">Lab 3 · Prompt C</span><span class="ptool">Claude Code: see the skills</span></div><button class="copy" type="button" data-copy="List the skills in .claude/skills/. Show each skill,
+its owner (a subagent, or the Lead) and its
+&quot;Use when&quot; line in a table. Confirm there are
+twenty, that each specialist has the skills
+the spec gives it, and that fact-check and
+fin-compliance belong to the Lead (this session).">Copy</button></header><pre>List the skills in .claude/skills/. Show each skill,
+its owner (a subagent, or the Lead) and its
+&quot;Use when&quot; line in a table. Confirm there are
+twenty, that each specialist has the skills
+the spec gives it, and that fact-check and
+fin-compliance belong to the Lead (this session).</pre></article></section><section class="lab" data-lab="4"><p class="eyebrow">Lab 4 · Day 1 · 40 min</p><h2>Connect the Tools Each Agent Needs</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 4&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Add the connectors</b> Desktop app: Customize → Connectors → Discover. Add (+) Google Drive, Gmail, Google Calendar and Firecrawl; sign in to each.</li><li><b>Add the plugin</b> In the chat type /plugin marketplace add anthropics/knowledge-work-plugins, then /plugin install marketing@knowledge-work-plugins.</li><li><b>Check</b> Start a new session. Type /mcp: the four connectors are listed. Type /plugin: Marketing is installed.</li><li><b>Put the data on Drive</b> Ask: &quot;Create a Google Drive folder named Horizon Studio and upload every file in data/ to it as plain files — do not convert them.&quot;</li><li><b>Give each agent its connectors</b> Copy and paste Prompt A, then start a new session so the agents reload.</li><li><b>Test each agent</b> After the new session opens, copy and paste Prompt B — one small job per agent, each on its own connector.</li></ol></details><h3>The prompts</h3><article class="prompt ask1"><header><div><span class="pname">Lab 4 · Ask</span><span class="ptool">Put the data on Drive</span></div><button class="copy" type="button" data-copy="Create a Google Drive folder named Horizon Studio and upload every file in data/ to it as plain files — do not convert them.">Copy</button></header><pre>Create a Google Drive folder named Horizon Studio and upload every file in data/ to it as plain files — do not convert them.</pre></article><article class="prompt"><header><div><span class="pname">Lab 4 · Prompt A</span><span class="ptool">Claude Code: give each agent its connectors</span></div><button class="copy" type="button" data-copy="Read data/connectors-setup.md. For each
+subagent in .claude/agents/, replace its tools line
+with the one given there, add the disallowedTools
+line where one is given, and update its
+&quot;Connectors&quot; section: what it may use, and that
+Gmail is drafts only. Change nothing else.">Copy</button></header><pre>Read data/connectors-setup.md. For each
+subagent in .claude/agents/, replace its tools line
+with the one given there, add the disallowedTools
+line where one is given, and update its
+&quot;Connectors&quot; section: what it may use, and that
+Gmail is drafts only. Change nothing else.</pre></article><article class="prompt"><header><div><span class="pname">Lab 4 · Prompt B</span><span class="ptool">Claude Code: test each agent</span></div><button class="copy" type="button" data-copy="First tell me which connectors and plugins you
+can use.
+Then run these five checks, each by its own subagent:
+1. growth-strategist: Firecrawl — search for one
+   2026 news item about financial planning in
+   Singapore, scrape it and cite it.
+2. growth-analyst: Google Drive — read
+   firm-metrics.csv from Horizon Studio; report
+   average monthly enquiries.
+3. content-creator: Gmail — a DRAFT to me with the
+   subject &quot;Connector test&quot;. Do not send.
+4. creative-designer: render a 1080x1080 test card
+   in Horizon colours and save it in content/test/.
+5. website-designer: built-in browser — open our
+   own copy of the site (web/site/index.html) at
+   375px wide and report any problem.
+Report each result in one line. If a check fails,
+say which tool was missing.">Copy</button></header><pre>First tell me which connectors and plugins you
+can use.
+Then run these five checks, each by its own subagent:
+1. growth-strategist: Firecrawl — search for one
+   2026 news item about financial planning in
+   Singapore, scrape it and cite it.
+2. growth-analyst: Google Drive — read
+   firm-metrics.csv from Horizon Studio; report
+   average monthly enquiries.
+3. content-creator: Gmail — a DRAFT to me with the
+   subject &quot;Connector test&quot;. Do not send.
+4. creative-designer: render a 1080x1080 test card
+   in Horizon colours and save it in content/test/.
+5. website-designer: built-in browser — open our
+   own copy of the site (web/site/index.html) at
+   375px wide and report any problem.
+Report each result in one line. If a check fails,
+say which tool was missing.</pre></article></section><section class="lab" data-lab="5"><p class="eyebrow">Lab 5 · Day 1 · 45 min</p><h2>Campaign 1: Research to Storyboard, with Subagents</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 5&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Brief the Lead</b> The briefs are already in data/. You are the client; your session is the Marketing Team Lead.</li><li><b>Research in parallel</b> Copy and paste Prompt A. Watch the strategist and the analyst run at the same time.</li><li><b>Read the ideas</b> Nine ideas, scored with the rubric — the top five open as an artifact beside the chat. The Lead stops for you.</li><li><b>Choose</b> Pick one idea in the artifact&#x27;s Ideas tab and note its number and why — the human concept checkpoint.</li><li><b>Storyboard</b> After you have chosen, copy and paste Prompt B in the chat, replacing &lt;number&gt; and &lt;one line&gt; with your choice.</li><li><b>Decide as Rachel</b> After you have read the issues, copy and paste Prompt C. You confirm what is true about Horizon; the team removes or fixes the rest.</li></ol></details><h3>The prompts</h3><p class="hint">Replace the <mark>highlighted</mark> parts before you send.</p><article class="prompt"><header><div><span class="pname">Lab 5 · Prompt A</span><span class="ptool">Claude Code: research and ideas</span></div><button class="copy" type="button" data-copy="Act as the Marketing Team Lead for the campaign
+in data/campaign-objective.md.
+Use subagents, in parallel:
+- growth-strategist: competitor-scan → save
+  research/competitive-analysis.md.
+- growth-analyst: the funnel in data/firm-metrics.csv
+  — what 40 chats a month needs → save
+  research/funnel.md.
+When both finish, the growth-strategist proposes
+three ideas each for young professionals, mid-career
+families and pre-retirees, scored with
+data/idea-rubric.md and tagged with a funnel stage
+(content-marketing) → strategy/ideas.md.
+Publish the top five as an artifact — one card per
+idea with its score, persona and funnel stage — and
+a box at the top that tells me what to do next.
+Then stop. I will choose.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Act as the Marketing Team Lead for the campaign
+in data/campaign-objective.md.
+Use subagents, in parallel:
+- growth-strategist: competitor-scan → save
+  research/competitive-analysis.md.
+- growth-analyst: the funnel in data/firm-metrics.csv
+  — what 40 chats a month needs → save
+  research/funnel.md.
+When both finish, the growth-strategist proposes
+three ideas each for young professionals, mid-career
+families and pre-retirees, scored with
+data/idea-rubric.md and tagged with a funnel stage
+(content-marketing) → strategy/ideas.md.
+Publish the top five as an artifact — one card per
+idea with its score, persona and funnel stage — and
+a box at the top that tells me what to do next.
+Then stop. I will choose.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 5 · Prompt B</span><span class="ptool">Claude Code: the storyboard</span></div><button class="copy" type="button" data-copy="I choose idea &lt;number&gt;, because &lt;one line&gt;.
+Use subagents:
+- growth-strategist: campaign-brief →
+  strategy/campaign-brief.md, then a five-beat
+  storyboard with data/storyboard-template.md →
+  strategy/storyboard.md.
+- content-creator: three channel variants that keep
+  the same claims — LinkedIn, Facebook, a 60-second
+  video.
+Then run fact-check and fin-compliance yourself and
+show me the issues before anything is final.
+Publish the brief and the storyboard as an artifact
+with a tab for the brief (goal, audience, message,
+call to action); a tab for the five beats side by side,
+each with its claim and source, and the three
+variants below; and the issues in a table.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>I choose idea <mark>&lt;number&gt;</mark>, because <mark>&lt;one line&gt;</mark>.
+Use subagents:
+- growth-strategist: campaign-brief →
+  strategy/campaign-brief.md, then a five-beat
+  storyboard with data/storyboard-template.md →
+  strategy/storyboard.md.
+- content-creator: three channel variants that keep
+  the same claims — LinkedIn, Facebook, a 60-second
+  video.
+Then run fact-check and fin-compliance yourself and
+show me the issues before anything is final.
+Publish the brief and the storyboard as an artifact
+with a tab for the brief (goal, audience, message,
+call to action); a tab for the five beats side by side,
+each with its claim and source, and the three
+variants below; and the issues in a table.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 5 · Prompt C</span><span class="ptool">Claude Code: decide on the issues</span></div><button class="copy" type="button" data-copy="I confirm &quot;no obligation&quot; and the free checklist —
+add them to the facts sheet (data/facts-2026.md).
+Delete any other claim that is not on the facts
+sheet. Fix all the Medium and Low issues, then show
+me the updated storyboard and publish it as an
+artifact.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>I confirm &quot;no obligation&quot; and the free checklist —
+add them to the facts sheet (data/facts-2026.md).
+Delete any other claim that is not on the facts
+sheet. Fix all the Medium and Low issues, then show
+me the updated storyboard and publish it as an
+artifact.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="when">After Prompt A</span><span class="q">Explain this result in three sentences. Which idea would you pick, and why?</span><button class="copy small" type="button" data-copy="Explain this result in three sentences. Which idea would you pick, and why?">Copy</button></li><li><span class="q">Why does idea <mark>&lt;number&gt;</mark> score higher than idea <mark>&lt;number&gt;</mark>?</span><button class="copy small" type="button" data-copy="Why does idea &lt;number&gt; score higher than idea &lt;number&gt;?">Copy</button></li><li><span class="q">What does the funnel say is our biggest problem?</span><button class="copy small" type="button" data-copy="What does the funnel say is our biggest problem?">Copy</button></li><li><span class="when">After Prompt B</span><span class="q">Explain the issues in plain English. What do I need to decide?</span><button class="copy small" type="button" data-copy="Explain the issues in plain English. What do I need to decide?">Copy</button></li><li><span class="when">After Prompt C</span><span class="q">What changed since the last version? Is anything still not ready for Rachel?</span><button class="copy small" type="button" data-copy="What changed since the last version? Is anything still not ready for Rachel?">Copy</button></li></ul></section></section><section class="lab" data-lab="6"><p class="eyebrow">Lab 6 · Day 1 · 40 min</p><h2>Growth Analyst: Personas from Evidence</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 6&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Check the data</b> The CSVs and templates are already in data/. Open one and skim it.</li><li><b>Analyse in parallel</b> Copy and paste Prompt A — three analyst sub-agents, one per file.</li><li><b>Challenge a claim</b> Pick one persona statement and ask: &quot;which rows show that?&quot;</li><li><b>Write the guides</b> After the persona cards appear, copy and paste Prompt B: a writing guide for each persona — how to talk to them.</li><li><b>Check the gaps</b> The 60+ group must be LOW CONFIDENCE.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 6 · Prompt A</span><span class="ptool">Claude Code: three analysts</span></div><button class="copy" type="button" data-copy="Use three growth-analyst subagents in parallel, one
+per file: data/survey-responses.csv,
+data/enquiries.csv, data/checklist-results.csv.
+Each uses audience-insights: counts with code, n
+and the file on every claim, INFERENCE and LOW
+CONFIDENCE labels, enquiry quotes verbatim with ids.
+Combine the results into three personas with
+data/persona-template.md → strategy/personas.md.
+Publish the personas as an artifact: one card each,
+with the key counts as small bar charts and the
+confidence label in colour.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Use three growth-analyst subagents in parallel, one
+per file: data/survey-responses.csv,
+data/enquiries.csv, data/checklist-results.csv.
+Each uses audience-insights: counts with code, n
+and the file on every claim, INFERENCE and LOW
+CONFIDENCE labels, enquiry quotes verbatim with ids.
+Combine the results into three personas with
+data/persona-template.md → strategy/personas.md.
+Publish the personas as an artifact: one card each,
+with the key counts as small bar charts and the
+confidence label in colour.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 6 · Prompt B</span><span class="ptool">Claude Code: requirements</span></div><button class="copy" type="button" data-copy="Use the growth-strategist and the content-creator
+subagents to write a writing guide for each persona
+(data/content-spec-template.md →
+strategy/content-spec.md): what they most want to
+know, where to reach them, what to make and how
+long, the tone, the proof that convinces them, what
+we ask them to do next, and what we never say.
+Back each answer with the data: which file, and how
+many people.
+Publish it as an artifact: one card per persona with
+a one-line summary on top and the answers under
+plain headings, then one table comparing the three
+personas side by side.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Use the growth-strategist and the content-creator
+subagents to write a writing guide for each persona
+(data/content-spec-template.md →
+strategy/content-spec.md): what they most want to
+know, where to reach them, what to make and how
+long, the tone, the proof that convinces them, what
+we ask them to do next, and what we never say.
+Back each answer with the data: which file, and how
+many people.
+Publish it as an artifact: one card per persona with
+a one-line summary on top and the answers under
+plain headings, then one table comparing the three
+personas side by side.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Explain these personas in three sentences. Which one should we target first, and why?</span><button class="copy small" type="button" data-copy="Explain these personas in three sentences. Which one should we target first, and why?">Copy</button></li><li><span class="q">Which survey answers show that <mark>&lt;a sentence from a persona&gt;</mark>?</span><button class="copy small" type="button" data-copy="Which survey answers show that &lt;a sentence from a persona&gt;?">Copy</button></li><li><span class="q">Why is the 60+ group marked low confidence?</span><button class="copy small" type="button" data-copy="Why is the 60+ group marked low confidence?">Copy</button></li></ul></section></section><section class="lab" data-lab="7"><p class="eyebrow">Lab 7 · Day 1 · 35 min</p><h2>Growth Analyst and Strategist: Cadence and Calendar</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 7&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Check the data</b> The assets are already in data/. Open one and skim it.</li><li><b>Find the sweet spot</b> Copy and paste Prompt A.</li><li><b>Question it</b> Why is the newsletter not weekly? The answer is in the unsubscribes.</li><li><b>Plan four weeks</b> After the analyst recommends a cadence, copy and paste Prompt B.</li><li><b>Check the buffers</b> Every review date is two business days ahead; nothing on a holiday.</li></ol></details><h3>The prompts</h3><article class="prompt ask1"><header><div><span class="pname">Lab 7 · Ask</span><span class="ptool">If needed: Dates fall on weekends</span></div><button class="copy" type="button" data-copy="publish Monday to Saturday; the newsletter is Sunday 8am only">Copy</button></header><pre>publish Monday to Saturday; the newsletter is Sunday 8am only</pre></article><article class="prompt"><header><div><span class="pname">Lab 7 · Prompt A</span><span class="ptool">Claude Code: the analyst</span></div><button class="copy" type="button" data-copy="Use the growth-analyst subagent. From
+data/channel-benchmarks.csv and
+data/team-capacity.md, recommend how often to
+publish on LinkedIn, Facebook, the newsletter and
+YouTube. Compare the extra clicks from one more
+post, the unfollows or unsubscribes it costs, and
+the hours → strategy/cadence.md.
+Publish it as an artifact: a chart per channel of the
+extra clicks against the unfollows, and the hours.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Use the growth-analyst subagent. From
+data/channel-benchmarks.csv and
+data/team-capacity.md, recommend how often to
+publish on LinkedIn, Facebook, the newsletter and
+YouTube. Compare the extra clicks from one more
+post, the unfollows or unsubscribes it costs, and
+the hours → strategy/cadence.md.
+Publish it as an artifact: a chart per channel of the
+extra clicks against the unfollows, and the hours.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 7 · Prompt B</span><span class="ptool">Claude Code: the strategist</span></div><button class="copy" type="button" data-copy="Use the growth-strategist subagent to build a
+four-week calendar from Monday 2 November 2026 in
+strategy/calendar.csv (columns as
+data/calendar-format.csv), from the cadence,
+strategy/storyboard.md and strategy/content-spec.md.
+review_by two business days before each date; no
+public holidays; no week over the team&#x27;s hours.
+Publish the four weeks as an artifact: a calendar grid
+by channel, review dates marked, hours per week.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Use the growth-strategist subagent to build a
+four-week calendar from Monday 2 November 2026 in
+strategy/calendar.csv (columns as
+data/calendar-format.csv), from the cadence,
+strategy/storyboard.md and strategy/content-spec.md.
+review_by two business days before each date; no
+public holidays; no week over the team&#x27;s hours.
+Publish the four weeks as an artifact: a calendar grid
+by channel, review dates marked, hours per week.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Why is the newsletter not weekly? Show me the numbers.</span><button class="copy small" type="button" data-copy="Why is the newsletter not weekly? Show me the numbers.">Copy</button></li><li><span class="q">What happens if we add a third LinkedIn post a week?</span><button class="copy small" type="button" data-copy="What happens if we add a third LinkedIn post a week?">Copy</button></li><li><span class="q">Which week is busiest, and does the team have the hours?</span><button class="copy small" type="button" data-copy="Which week is busiest, and does the team have the hours?">Copy</button></li></ul></section></section><section class="lab" data-lab="8"><p class="eyebrow">Lab 8 · Day 1 · 40 min</p><h2>Content Creator: A Quick Blog Article</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 8&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Write and post it</b> Copy and paste the prompt. Claude researches, writes, checks and fixes the article, then posts it to your copy of Horizon&#x27;s website.</li><li><b>Read it on the site</b> Your copy of the website opens in your browser: your article is first under &quot;From our blog&quot;. Say what to change, if anything.</li></ol></details><h3>The prompts</h3><p class="hint">Replace the <mark>highlighted</mark> parts before you send.</p><article class="prompt ask1"><header><div><span class="pname">Lab 8 · Ask</span><span class="ptool">If needed: The browser does not open</span></div><button class="copy" type="button" data-copy="Start my website again.">Copy</button></header><pre>Start my website again.</pre></article><article class="prompt"><header><div><span class="pname">Lab 8 · Prompt</span><span class="ptool">Claude Code: a quick blog</span></div><button class="copy" type="button" data-copy="Write a quick blog article for Horizon and post it
+to the website. Use the blog-post, sunny-voice,
+fact-check and fin-compliance skills.
+1. Pick one topic from strategy/storyboard.md that
+   a Singaporean would search for. Use Firecrawl to
+   find two current sources (CPF Board, MAS or
+   MoneySense), each with its date.
+2. Write 500-700 words: a title under 60
+   characters, every figure from data/facts-2026.md,
+   one call to action (book a free 30-minute
+   chat) and the full disclaimer →
+   content/blog/&lt;slug&gt;.md.
+3. Run fact-check and fin-compliance; fix every
+   issue and list each fix in one line.
+4. Add it to the blog in web/site/index.html as one
+   new post, built like the posts already there.
+   Change nothing else on the site. Then start my
+   website if it is not running, and open it.
+Write for a business owner, in plain English. Save
+a Word copy (.docx) of the article.">Copy</button></header><pre>Write a quick blog article for Horizon and post it
+to the website. Use the blog-post, sunny-voice,
+fact-check and fin-compliance skills.
+1. Pick one topic from strategy/storyboard.md that
+   a Singaporean would search for. Use Firecrawl to
+   find two current sources (CPF Board, MAS or
+   MoneySense), each with its date.
+2. Write 500-700 words: a title under 60
+   characters, every figure from data/facts-2026.md,
+   one call to action (book a free 30-minute
+   chat) and the full disclaimer →
+   content/blog/<mark>&lt;slug&gt;</mark>.md.
+3. Run fact-check and fin-compliance; fix every
+   issue and list each fix in one line.
+4. Add it to the blog in web/site/index.html as one
+   new post, built like the posts already there.
+   Change nothing else on the site. Then start my
+   website if it is not running, and open it.
+Write for a business owner, in plain English. Save
+a Word copy (.docx) of the article.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Summarise the article in three sentences. Who is it for?</span><button class="copy small" type="button" data-copy="Summarise the article in three sentences. Who is it for?">Copy</button></li><li><span class="q">Why did you pick this topic, and who will search for it?</span><button class="copy small" type="button" data-copy="Why did you pick this topic, and who will search for it?">Copy</button></li><li><span class="q">What did the checks find, and how did you fix it?</span><button class="copy small" type="button" data-copy="What did the checks find, and how did you fix it?">Copy</button></li></ul></section></section><section class="lab" data-lab="9"><p class="eyebrow">Lab 9 · Day 2 · 50 min</p><h2>The Lead Magnet: a Checklist and Its Welcome Emails</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 9&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Design it</b> Copy and paste Prompt A. The checklist opens as an artifact; ask in the chat for any change.</li><li><b>Write the welcome emails</b> After the checklist looks right, copy and paste Prompt B. The three emails also appear as drafts in your Gmail.</li><li><b>Check it</b> After the three emails are saved, copy and paste Prompt C.</li><li><b>Put it on the website</b> After the checks pass, copy and paste Prompt D. Your copy of the website opens in your browser, with the checklist behind an email box.</li></ol></details><h3>The prompts</h3><article class="prompt ask1"><header><div><span class="pname">Lab 9 · Ask</span><span class="ptool">If needed: The PDF is missing</span></div><button class="copy" type="button" data-copy="save the checklist as a PDF in content/lead-magnet/">Copy</button></header><pre>save the checklist as a PDF in content/lead-magnet/</pre></article><article class="prompt"><header><div><span class="pname">Lab 9 · Prompt A</span><span class="ptool">Claude Code: the checklist</span></div><button class="copy" type="button" data-copy="Use the lead-magnet skill. Turn
+data/checklist-items.md into the &quot;Money Check-up
+Checklist&quot;: a title with one promise, the ten items
+as tick boxes, one figure from data/facts-2026.md,
+the next step (book a free chat) and the full
+disclaimer. Lay it out as a printable A4 page in
+the colours and fonts in data/brand.md and publish
+it as an artifact. Save a PDF of it in
+content/lead-magnet/.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Use the lead-magnet skill. Turn
+data/checklist-items.md into the &quot;Money Check-up
+Checklist&quot;: a title with one promise, the ten items
+as tick boxes, one figure from data/facts-2026.md,
+the next step (book a free chat) and the full
+disclaimer. Lay it out as a printable A4 page in
+the colours and fonts in data/brand.md and publish
+it as an artifact. Save a PDF of it in
+content/lead-magnet/.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 9 · Prompt B</span><span class="ptool">Claude Code: the welcome emails</span></div><button class="copy" type="button" data-copy="Use the Marketing plugin&#x27;s email sequence to write
+three welcome emails for people who download the
+checklist: day 0 (here it is), day 3 (the item most
+people miss — the retirement number), day 7 (book a
+free chat). Follow the newsletter and sunny-voice
+skills → content/email/welcome-sequence.md.
+Then, using the Gmail connector, create the
+three emails as DRAFTS in my Gmail, addressed to
+me. Send nothing.
+Publish the three emails as an artifact: one tab per
+email, laid out as it will look in the inbox.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Use the Marketing plugin&#x27;s email sequence to write
+three welcome emails for people who download the
+checklist: day 0 (here it is), day 3 (the item most
+people miss — the retirement number), day 7 (book a
+free chat). Follow the newsletter and sunny-voice
+skills → content/email/welcome-sequence.md.
+Then, using the Gmail connector, create the
+three emails as DRAFTS in my Gmail, addressed to
+me. Send nothing.
+Publish the three emails as an artifact: one tab per
+email, laid out as it will look in the inbox.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 9 · Prompt C</span><span class="ptool">Claude Code: check it</span></div><button class="copy" type="button" data-copy="Run fact-check and fin-compliance on the checklist
+text and the three emails. Show the issues in one
+table, with a fix for each. Once I agree, make the
+fixes in the files and in the Gmail drafts.
+Publish the table as an artifact, coloured by
+severity.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Run fact-check and fin-compliance on the checklist
+text and the three emails. Show the issues in one
+table, with a fix for each. Once I agree, make the
+fixes in the files and in the Gmail drafts.
+Publish the table as an artifact, coloured by
+severity.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 9 · Prompt D</span><span class="ptool">Claude Code: put it on the website</span></div><button class="copy" type="button" data-copy="Add the checked Money Check-up Checklist to
+Horizon&#x27;s website in web/site/index.html, as a new
+section before the reviews, in the site&#x27;s style:
+the title and promise, what&#x27;s inside, and an email
+box with a required consent tick box. Once a valid
+email is entered, show the ten items as tick boxes
+and a &quot;Print or save as PDF&quot; button. Add &quot;Free
+checklist&quot; to the menu. Change nothing else on the
+site. Then start my website if it is not running,
+and open it.">Copy</button></header><pre>Add the checked Money Check-up Checklist to
+Horizon&#x27;s website in web/site/index.html, as a new
+section before the reviews, in the site&#x27;s style:
+the title and promise, what&#x27;s inside, and an email
+box with a required consent tick box. Once a valid
+email is entered, show the ten items as tick boxes
+and a &quot;Print or save as PDF&quot; button. Add &quot;Free
+checklist&quot; to the menu. Change nothing else on the
+site. Then start my website if it is not running,
+and open it.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Which checklist item do people most often miss, and why does it matter?</span><button class="copy small" type="button" data-copy="Which checklist item do people most often miss, and why does it matter?">Copy</button></li><li><span class="q">Read the day 3 email as a 55-year-old. Is anything unclear?</span><button class="copy small" type="button" data-copy="Read the day 3 email as a 55-year-old. Is anything unclear?">Copy</button></li><li><span class="q">Explain each issue in one line: what is wrong, and the fix.</span><button class="copy small" type="button" data-copy="Explain each issue in one line: what is wrong, and the fix.">Copy</button></li></ul></section></section><section class="lab" data-lab="10"><p class="eyebrow">Lab 10 · Day 2 · 50 min</p><h2>Campaign 2: Social Media Posts (Demo)</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 10&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Get the latest kit</b> Copy and paste Prompt A. Claude downloads the newest course files into your folder and starts your website. Your own work stays as it is.</li><li><b>Test the gate</b> Ask Claude to approve a post itself. The gate must block it.</li><li><b>Start the team</b> After Claude says the kit is up to date, copy and paste Prompt B. The Lead starts two teammates and tells you as each one starts and finishes.</li><li><b>Watch them talk</b> The review page opens with a Team chat: the designer asking the creator for each hook, and the Lead&#x27;s fixes.</li><li><b>Approve as a person</b> Review in the artifact (or open the review email and click its link). Click Approve or Request changes on each post, then Copy in the bottom bar and paste into the chat.</li><li><b>Get ready to post</b> After you have approved the posts, copy and paste Prompt C. Each post appears with a Copy button for its text, and the folder with the two images opens on your computer.</li><li><b>Post it yourself</b> Paste the text, add the image, Post — on LinkedIn and a test Facebook Page. Or stop at the preview.</li><li><b>Optional: post through the apps</b> Follow &quot;Optional: post through LinkedIn and Facebook&quot; in this lab&#x27;s README.</li></ol></details><h3>The prompts</h3><p class="hint">Replace the <mark>highlighted</mark> parts before you send.</p><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Make your key file</span></div><button class="copy" type="button" data-copy="Make my .env file from data/env.example and open it in a text editor.">Copy</button></header><pre>Make my .env file from data/env.example and open it in a text editor.</pre></article><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Your LinkedIn ID</span></div><button class="copy" type="button" data-copy="Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token.">Copy</button></header><pre>Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token.</pre></article><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Dry run</span></div><button class="copy" type="button" data-copy="Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go.">Copy</button></header><pre>Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt A</span><span class="ptool">Claude Code: get the latest kit</span></div><button class="copy" type="button" data-copy="Bring this studio up to date with the course kit.
+Download each file below from
+https://raw.githubusercontent.com/tertiarycourses/C1034-Multi-AI-Agents-for-Content-Creation/main/labs/horizon-studio/
+into the same place here, replacing the old copy:
+.claude/settings.json; scripts/approve-chat.mjs,
+gate-hook.mjs, lib.mjs, publish.mjs, serve-site.mjs
+and submit.mjs; data/publishing-spec.md,
+channel-formats.md, connect-accounts.md,
+env.example, turning-55-brief.md and
+turning-55-draft.md. Touch nothing else.
+Then add these rules to CLAUDE.md if they are
+missing: every post links to http://localhost:8080/ with
+UTM tags, never a claude.ai artifact link; a person
+approves by typing &quot;approved &lt;id&gt; by &lt;name&gt;&quot; in the
+chat; never ask me to run a command.
+Then start my website and tell me in one line that
+the kit is up to date.">Copy</button></header><pre>Bring this studio up to date with the course kit.
+Download each file below from
+https://raw.githubusercontent.com/tertiarycourses/C1034-Multi-AI-Agents-for-Content-Creation/main/labs/horizon-studio/
+into the same place here, replacing the old copy:
+.claude/settings.json; scripts/approve-chat.mjs,
+gate-hook.mjs, lib.mjs, publish.mjs, serve-site.mjs
+and submit.mjs; data/publishing-spec.md,
+channel-formats.md, connect-accounts.md,
+env.example, turning-55-brief.md and
+turning-55-draft.md. Touch nothing else.
+Then add these rules to CLAUDE.md if they are
+missing: every post links to http://localhost:8080/ with
+UTM tags, never a claude.ai artifact link; a person
+approves by typing &quot;approved <mark>&lt;id&gt;</mark> by <mark>&lt;name&gt;</mark>&quot; in the
+chat; never ask me to run a command.
+Then start my website and tell me in one line that
+the kit is up to date.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt B</span><span class="ptool">Claude Code: the social team</span></div><button class="copy" type="button" data-copy="Create an agent team for Week 1 social from
+data/social-brief.md and strategy/calendar.csv.
+Spawn two teammates using the agent types
+content-creator and creative-designer; you are the
+Lead.
+- content-creator: 1 LinkedIn + 1 Facebook post
+  with linkedin-post, facebook-post and copywriting,
+  one file each in content/social/week-01/, with the
+  frontmatter in data/publishing-spec.md. Each post
+  links to my website, http://localhost:8080/, with
+  UTM tags.
+- creative-designer: one image per post (a rendered
+  card in Horizon colours: LinkedIn 1200 x 627,
+  Facebook 1080 x 1080) with alt text; message the
+  creator for each post&#x27;s hook before designing. Save
+  each as a PNG beside its post and fill in the
+  post&#x27;s image and alt lines.
+- You: fact-check and fin-compliance on every post
+  and image; message fixes to the teammate who owns
+  it.
+Before you start, ask me how I will review: in the
+artifact, or by email (then ask for the approver&#x27;s
+address). When a post passes, submit it for review
+with scripts/submit.mjs. Publish the two posts as
+an artifact. At the top, a Team chat: the messages
+the teammates and you sent each other, in order,
+each with who sent it. Then each post as it will
+look in the feed, with its image and alt text;
+under each post put two
+working buttons (JavaScript): Approve turns the
+card green; Request changes opens a box for my
+note. A bar at the bottom asks my name once, builds
+the exact lines to paste in the chat (&quot;approved
+&lt;id&gt; by &lt;name&gt;&quot;, &quot;changes &lt;id&gt;: &lt;note&gt;&quot;) and has a
+Copy button that says &quot;Copied - now paste it in the
+chat&quot;. Keep the lines on screen in case copying is
+blocked. If I chose email, send ONE review email to
+the approver with Gmail: the artifact link and what
+passed the checks. Send nothing else; publish
+nothing.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Create an agent team for Week 1 social from
+data/social-brief.md and strategy/calendar.csv.
+Spawn two teammates using the agent types
+content-creator and creative-designer; you are the
+Lead.
+- content-creator: 1 LinkedIn + 1 Facebook post
+  with linkedin-post, facebook-post and copywriting,
+  one file each in content/social/week-01/, with the
+  frontmatter in data/publishing-spec.md. Each post
+  links to my website, http://localhost:8080/, with
+  UTM tags.
+- creative-designer: one image per post (a rendered
+  card in Horizon colours: LinkedIn 1200 x 627,
+  Facebook 1080 x 1080) with alt text; message the
+  creator for each post&#x27;s hook before designing. Save
+  each as a PNG beside its post and fill in the
+  post&#x27;s image and alt lines.
+- You: fact-check and fin-compliance on every post
+  and image; message fixes to the teammate who owns
+  it.
+Before you start, ask me how I will review: in the
+artifact, or by email (then ask for the approver&#x27;s
+address). When a post passes, submit it for review
+with scripts/submit.mjs. Publish the two posts as
+an artifact. At the top, a Team chat: the messages
+the teammates and you sent each other, in order,
+each with who sent it. Then each post as it will
+look in the feed, with its image and alt text;
+under each post put two
+working buttons (JavaScript): Approve turns the
+card green; Request changes opens a box for my
+note. A bar at the bottom asks my name once, builds
+the exact lines to paste in the chat (&quot;approved
+<mark>&lt;id&gt;</mark> by <mark>&lt;name&gt;</mark>&quot;, &quot;changes <mark>&lt;id&gt;</mark>: <mark>&lt;note&gt;</mark>&quot;) and has a
+Copy button that says &quot;Copied - now paste it in the
+chat&quot;. Keep the lines on screen in case copying is
+blocked. If I chose email, send ONE review email to
+the approver with Gmail: the artifact link and what
+passed the checks. Send nothing else; publish
+nothing.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt C</span><span class="ptool">Claude Code: ready to post</span></div><button class="copy" type="button" data-copy="For each Week 1 post approved in
+review/approvals.csv, publish a &quot;ready to post&quot;
+artifact: the post text with a Copy button, its
+image, and the steps to post it by hand on LinkedIn
+or our Facebook Page. Then open the folder with the
+two images on my computer. Publish nothing yourself.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>For each Week 1 post approved in
+review/approvals.csv, publish a &quot;ready to post&quot;
+artifact: the post text with a Copy button, its
+image, and the steps to post it by hand on LinkedIn
+or our Facebook Page. Then open the folder with the
+two images on my computer. Publish nothing yourself.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Which post do you expect to do best, and why?</span><button class="copy small" type="button" data-copy="Which post do you expect to do best, and why?">Copy</button></li><li><span class="q">What did the Lead send back to the writer, and why?</span><button class="copy small" type="button" data-copy="What did the Lead send back to the writer, and why?">Copy</button></li><li><span class="q">Is anything here not ready to post? Explain in plain English.</span><button class="copy small" type="button" data-copy="Is anything here not ready to post? Explain in plain English.">Copy</button></li></ul></section></section><section class="lab" data-lab="11"><p class="eyebrow">Lab 11 · Day 2 · 60 min</p><h2>Campaign 3: Newsletter and a Landing Page</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 11&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Start the campaign</b> Copy and paste Prompt A.</li><li><b>Approve the words</b> Review the issue in the artifact (or the review email&#x27;s link). Click Approve or Request changes, then Copy and paste into the chat.</li><li><b>Publish the page</b> The website designer runs page-qa and publishes web/checklist/ as a Claude artifact.</li><li><b>Check the list</b> Only people with consent = yes and unsubscribed = no are on the recipient list.</li><li><b>Create the drafts</b> After the page is published and the list checked, copy and paste Prompt B.</li><li><b>Send one test</b> Send only the draft addressed to yourself, and read it on your phone.</li></ol></details><h3>The prompts</h3><p class="hint">Replace the <mark>highlighted</mark> parts before you send.</p><article class="prompt"><header><div><span class="pname">Lab 11 · Prompt A</span><span class="ptool">Claude Code: the newsletter team</span></div><button class="copy" type="button" data-copy="Create an agent team for the November Sunny
+Sunday email (data/newsletter-brief.md,
+data/newsletter-spec.md) and its landing page
+(data/landing-page-brief.md). Spawn three teammates:
+content-creator, website-designer and growth-analyst.
+- content-creator: issue.md (id nl-2026-11) with
+  newsletter, and the landing-page copy.
+- website-designer: web/checklist/index.html with
+  lead-magnet, web-design and landing-page from the
+  approved copy; page-qa.
+- growth-analyst: recipients.csv and excluded.csv
+  from data/subscribers.csv.
+Before you start, ask me how I will review: in the
+artifact, or by email (then ask for the approver&#x27;s
+address). You check everything, then submit
+nl-2026-11 and publish the issue as an artifact,
+laid out as the email, with the counts of
+recipients and excluded, and two working buttons
+(JavaScript): Approve turns the page green; Request
+changes opens a box for my note. A bar at the
+bottom asks my name once, builds the exact line to
+paste in the chat (&quot;approved &lt;id&gt; by &lt;name&gt;&quot; or
+&quot;changes &lt;id&gt;: &lt;note&gt;&quot;) and has a Copy button that
+says &quot;Copied - now paste it in the chat&quot;. Keep the
+line on screen in case copying is blocked. If I
+chose email, send ONE review email to the approver
+with Gmail: the artifact link and what passed the
+checks. Only
+after I approve, build newsletter.html and .txt and
+publish the page as an artifact.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Create an agent team for the November Sunny
+Sunday email (data/newsletter-brief.md,
+data/newsletter-spec.md) and its landing page
+(data/landing-page-brief.md). Spawn three teammates:
+content-creator, website-designer and growth-analyst.
+- content-creator: issue.md (id nl-2026-11) with
+  newsletter, and the landing-page copy.
+- website-designer: web/checklist/index.html with
+  lead-magnet, web-design and landing-page from the
+  approved copy; page-qa.
+- growth-analyst: recipients.csv and excluded.csv
+  from data/subscribers.csv.
+Before you start, ask me how I will review: in the
+artifact, or by email (then ask for the approver&#x27;s
+address). You check everything, then submit
+nl-2026-11 and publish the issue as an artifact,
+laid out as the email, with the counts of
+recipients and excluded, and two working buttons
+(JavaScript): Approve turns the page green; Request
+changes opens a box for my note. A bar at the
+bottom asks my name once, builds the exact line to
+paste in the chat (&quot;approved <mark>&lt;id&gt;</mark> by <mark>&lt;name&gt;</mark>&quot; or
+&quot;changes <mark>&lt;id&gt;</mark>: <mark>&lt;note&gt;</mark>&quot;) and has a Copy button that
+says &quot;Copied - now paste it in the chat&quot;. Keep the
+line on screen in case copying is blocked. If I
+chose email, send ONE review email to the approver
+with Gmail: the artifact link and what passed the
+checks. Only
+after I approve, build newsletter.html and .txt and
+publish the page as an artifact.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 11 · Prompt B</span><span class="ptool">Claude Code: Gmail drafts</span></div><button class="copy" type="button" data-copy="Using the Gmail connector, create a DRAFT of
+newsletter.html for each address in recipients.csv,
+plus one draft addressed to me only. Send nothing.
+Publish a report as an artifact: how many drafts, how many
+people were excluded, and why, in a table.">Copy</button></header><pre>Using the Gmail connector, create a DRAFT of
+newsletter.html for each address in recipients.csv,
+plus one draft addressed to me only. Send nothing.
+Publish a report as an artifact: how many drafts, how many
+people were excluded, and why, in a table.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Explain the email in three sentences. What do we want readers to do?</span><button class="copy small" type="button" data-copy="Explain the email in three sentences. What do we want readers to do?">Copy</button></li><li><span class="q">Who was left off the mailing list, and why?</span><button class="copy small" type="button" data-copy="Who was left off the mailing list, and why?">Copy</button></li><li><span class="q">What did the landing-page check look at, and did it pass?</span><button class="copy small" type="button" data-copy="What did the landing-page check look at, and did it pass?">Copy</button></li></ul></section></section><section class="lab" data-lab="12"><p class="eyebrow">Lab 12 · Day 2 · 55 min</p><h2>Campaign 4: The YouTube Explainer</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 12&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Script it as a team</b> Copy and paste Prompt A.</li><li><b>Approve the script</b> Read the scenes, title and description in the storyboard artifact; type: approved yt-ep01-script by &lt;your name&gt;.</li><li><b>Render it</b> After you approve the script, copy and paste Prompt B. The designer runs video-render.</li><li><b>Approve the video</b> Ask the Lead to submit the video, watch ep01.mp4 to the end, then approve yt-ep01.</li><li><b>Upload</b> After you approve the video, copy and paste Prompt C. It goes up as private.</li><li><b>Disclose</b> In YouTube Studio, answer the altered or synthetic content question before making it public.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 12 · Prompt A</span><span class="ptool">Claude Code: the video team</span></div><button class="copy" type="button" data-copy="Create an agent team for YouTube episode 1 from
+data/youtube-brief.md. Spawn three teammates:
+growth-strategist (the angle and hook),
+content-creator (content/video/ep01/scenes.json,
+5-7 scenes, and ep01.md with title, tags,
+description, chapters and the AI disclosure) and
+creative-designer (a storyboard of the scenes and a
+thumbnail, using brand-visuals).
+You fact-check and fin-compliance the script, then
+submit it as yt-ep01-script. Publish nothing.
+Publish the storyboard as an artifact: one frame per
+scene with its words, visual and timing, and the
+thumbnail.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Create an agent team for YouTube episode 1 from
+data/youtube-brief.md. Spawn three teammates:
+growth-strategist (the angle and hook),
+content-creator (content/video/ep01/scenes.json,
+5-7 scenes, and ep01.md with title, tags,
+description, chapters and the AI disclosure) and
+creative-designer (a storyboard of the scenes and a
+thumbnail, using brand-visuals).
+You fact-check and fin-compliance the script, then
+submit it as yt-ep01-script. Publish nothing.
+Publish the storyboard as an artifact: one frame per
+scene with its words, visual and timing, and the
+thumbnail.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 12 · Prompt B</span><span class="ptool">Claude Code: render and upload</span></div><button class="copy" type="button" data-copy="Use the creative-designer subagent with
+video-render on the approved scenes.json →
+content/video/ep01/ep01.mp4 (data/video-spec.md).
+Check its length and size. Do not change approved
+words. Publish the checks as an artifact: length,
+size, resolution and every scene, PASS or FAIL.">Copy</button></header><pre>Use the creative-designer subagent with
+video-render on the approved scenes.json →
+content/video/ep01/ep01.mp4 (data/video-spec.md).
+Check its length and size. Do not change approved
+words. Publish the checks as an artifact: length,
+size, resolution and every scene, PASS or FAIL.</pre></article><article class="prompt"><header><div><span class="pname">Lab 12 · Prompt C</span><span class="ptool">Claude Code: render and upload</span></div><button class="copy" type="button" data-copy="Do a dry run of the YouTube upload for yt-ep01
+(scripts/publish.mjs). If I say &quot;go&quot;, upload it for
+real — as PRIVATE. Publish the request, then the
+YouTube Studio link, as an artifact.">Copy</button></header><pre>Do a dry run of the YouTube upload for yt-ep01
+(scripts/publish.mjs). If I say &quot;go&quot;, upload it for
+real — as PRIVATE. Publish the request, then the
+YouTube Studio link, as an artifact.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Walk me through the video scene by scene, in plain English.</span><button class="copy small" type="button" data-copy="Walk me through the video scene by scene, in plain English.">Copy</button></li><li><span class="q">Which figure on screen should I double-check, and against what?</span><button class="copy small" type="button" data-copy="Which figure on screen should I double-check, and against what?">Copy</button></li><li><span class="q">What does the AI disclosure say, and why do we need it?</span><button class="copy small" type="button" data-copy="What does the AI disclosure say, and why do we need it?">Copy</button></li></ul></section></section><section class="lab" data-lab="13"><p class="eyebrow">Lab 13 · Day 2 · 45 min</p><h2>Campaign 5: Always On — the Weekly Growth Report</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 13&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Put the data on Drive</b> Ask: &quot;Upload data/campaign-results.csv to my Google Drive folder Horizon Studio as a plain file, replacing any old copy.&quot;</li><li><b>Do it once</b> Copy and paste Prompt A. Refine the report until it is right.</li><li><b>Schedule it</b> After the report is right, copy and paste Prompt B into the instructions of a new routine: Routines → New routine → Local, Mondays at 8am.</li><li><b>Run it now</b> Click Run now once, approve any permission prompts, then open the Gmail draft.</li><li><b>Pause it</b> After class, pause the routine.</li></ol></details><h3>The prompts</h3><article class="prompt ask1"><header><div><span class="pname">Lab 13 · Ask</span><span class="ptool">Put the data on Drive</span></div><button class="copy" type="button" data-copy="Upload data/campaign-results.csv to my Google Drive folder Horizon Studio as a plain file, replacing any old copy.">Copy</button></header><pre>Upload data/campaign-results.csv to my Google Drive folder Horizon Studio as a plain file, replacing any old copy.</pre></article><article class="prompt"><header><div><span class="pname">Lab 13 · Prompt A</span><span class="ptool">Claude Code: do it once</span></div><button class="copy" type="button" data-copy="Act as Horizon&#x27;s Growth Analyst. Using Google
+Drive, read campaign-results.csv in the Horizon
+Studio folder. Use the campaign-report skill and
+data/weekly-report-brief.md. Leave the report as a
+Gmail DRAFT to me, subject &quot;Horizon weekly growth
+report&quot; and today&#x27;s date. Send nothing.
+Also publish the report as an artifact: cost per chat
+by channel as a chart, and the budget split.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Act as Horizon&#x27;s Growth Analyst. Using Google
+Drive, read campaign-results.csv in the Horizon
+Studio folder. Use the campaign-report skill and
+data/weekly-report-brief.md. Leave the report as a
+Gmail DRAFT to me, subject &quot;Horizon weekly growth
+report&quot; and today&#x27;s date. Send nothing.
+Also publish the report as an artifact: cost per chat
+by channel as a chart, and the budget split.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 13 · Prompt B</span><span class="ptool">Claude Code: the routine</span></div><button class="copy" type="button" data-copy="Run the campaign-report skill as Horizon&#x27;s Growth
+Analyst. Read campaign-results.csv in the Horizon
+Studio folder on Google Drive and follow
+weekly-report-brief.md. Leave the report as a draft
+email to me in Gmail with the subject &quot;Horizon
+weekly growth report&quot; and today&#x27;s date. Do not send
+it, and do not publish or approve anything.">Copy</button></header><pre>Run the campaign-report skill as Horizon&#x27;s Growth
+Analyst. Read campaign-results.csv in the Horizon
+Studio folder on Google Drive and follow
+weekly-report-brief.md. Leave the report as a draft
+email to me in Gmail with the subject &quot;Horizon
+weekly growth report&quot; and today&#x27;s date. Do not send
+it, and do not publish or approve anything.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">What is the one decision this report asks me to make?</span><button class="copy small" type="button" data-copy="What is the one decision this report asks me to make?">Copy</button></li><li><span class="q">Which channel gets us a chat most cheaply, and how sure are you?</span><button class="copy small" type="button" data-copy="Which channel gets us a chat most cheaply, and how sure are you?">Copy</button></li><li><span class="q">What would you change in next month&#x27;s budget, and why?</span><button class="copy small" type="button" data-copy="What would you change in next month&#x27;s budget, and why?">Copy</button></li></ul></section></section><section class="lab" data-lab="14"><p class="eyebrow">Lab 14 · Day 2 · 50 min</p><h2>Measure, Govern and Write the Team Playbook</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 14&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Check the data</b> The assets are already in data/. Open one and skim it.</li><li><b>Compare the patterns</b> Copy and paste Prompt A.</li><li><b>Write the playbook</b> After the Lead shows the comparison, copy and paste Prompt B.</li><li><b>Review it as Rachel</b> Add one rule of your own and say why.</li></ol></details><h3>The prompts</h3><article class="prompt ask1"><header><div><span class="pname">Lab 14 · Ask</span><span class="ptool">If needed: The playbook is generic</span></div><button class="copy" type="button" data-copy="use our actual agents, files and numbers">Copy</button></header><pre>use our actual agents, files and numbers</pre></article><article class="prompt"><header><div><span class="pname">Lab 14 · Prompt A</span><span class="ptool">Claude Code: compare</span></div><button class="copy" type="button" data-copy="Use the growth-analyst subagent. From
+data/run-log.csv compare the patterns we used —
+one agent, subagents, agent teams and the scheduled task
+— on minutes, tokens, defects caught before a person
+and human edits. Which pattern pays off for which
+job? Save reports/agent-comparison.md.
+Publish it as an artifact: one chart per measure,
+comparing the patterns.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Use the growth-analyst subagent. From
+data/run-log.csv compare the patterns we used —
+one agent, subagents, agent teams and the scheduled task
+— on minutes, tokens, defects caught before a person
+and human edits. Which pattern pays off for which
+job? Save reports/agent-comparison.md.
+Publish it as an artifact: one chart per measure,
+comparing the patterns.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 14 · Prompt B</span><span class="ptool">Claude Code: the playbook</span></div><button class="copy" type="button" data-copy="Write strategy/team-playbook.md with
+data/playbook-outline.md. Include the roster: for
+each agent its instructions file in .claude/agents/, its
+skills, connectors, model and what it may never do;
+the approval matrix by risk; the rules in
+data/responsible-ai-checklist.md; and what to do when
+a wrong post goes out. Then run fin-compliance on
+it.
+Publish the playbook as an artifact: the roster as
+cards, the approval matrix as a table.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Write strategy/team-playbook.md with
+data/playbook-outline.md. Include the roster: for
+each agent its instructions file in .claude/agents/, its
+skills, connectors, model and what it may never do;
+the approval matrix by risk; the rules in
+data/responsible-ai-checklist.md; and what to do when
+a wrong post goes out. Then run fin-compliance on
+it.
+Publish the playbook as an artifact: the roster as
+cards, the approval matrix as a table.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">In one line each: when should we use one agent, subagents and an agent team?</span><button class="copy small" type="button" data-copy="In one line each: when should we use one agent, subagents and an agent team?">Copy</button></li><li><span class="q">Who must approve a post that has a CPF figure in it?</span><button class="copy small" type="button" data-copy="Who must approve a post that has a CPF figure in it?">Copy</button></li><li><span class="q">A wrong post went out. What are the first three things we do?</span><button class="copy small" type="button" data-copy="A wrong post went out. What are the first three things we do?">Copy</button></li></ul></section></section><section class="lab" data-lab="15"><p class="eyebrow">Lab 15 · Day 2 · 40 min</p><h2>Agent Teams: A Strategy Debate and a QA Loop</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 15&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Part 1: the debate</b> Copy and paste Prompt A. The advocate and the critic message each other; the decision page shows their debate.</li><li><b>Decide</b> Read the decision artifact. Reply &quot;go&quot;, &quot;go with conditions&quot; or &quot;no-go&quot; — the call is yours.</li><li><b>Part 2: the QA loop</b> After you have made the call, copy and paste Prompt B. The audit fails on round 1; watch the auditor message the writer directly.</li><li><b>Approve as a person</b> Read the pieces and the QA artifact, then type in the chat: approved &lt;id&gt; by &lt;your name&gt; (or: changes &lt;id&gt;: what to fix).</li><li><b>Shut down</b> After you have approved the pieces, copy and paste Prompt C. The Lead stops each teammate and cleans up the team.</li></ol></details><h3>The prompts</h3><article class="prompt ask1"><header><div><span class="pname">Lab 15 · Ask</span><span class="ptool">If needed: Claude cannot find turning-55-brief.md</span></div><button class="copy" type="button" data-copy="Download turning-55-brief.md and turning-55-draft.md from https://raw.githubusercontent.com/tertiarycourses/C1034-Multi-AI-Agents-for-Content-Creation/main/labs/horizon-studio/data/ into data/.">Copy</button></header><pre>Download turning-55-brief.md and turning-55-draft.md from https://raw.githubusercontent.com/tertiarycourses/C1034-Multi-AI-Agents-for-Content-Creation/main/labs/horizon-studio/data/ into data/.</pre></article><article class="prompt"><header><div><span class="pname">Lab 15 · Prompt A</span><span class="ptool">Claude Code: the strategy debate</span></div><button class="copy" type="button" data-copy="Create an agent team to test the strategy in
+data/turning-55-brief.md before we spend on it.
+You are the Lead and the judge: do not argue.
+Spawn two teammates:
+- advocate, using the agent type growth-strategist:
+  argue FOR the strategy.
+- critic, using the agent type growth-analyst:
+  argue AGAINST it.
+- Both: cite data/campaign-results.csv,
+  strategy/personas.md, data/facts-2026.md or
+  data/compliance-checklist.md for every point;
+  message each other directly; rebut twice at most.
+- You: write strategy/turning-55-decision.md with
+  the pros, the cons, your verdict (go / go with
+  conditions / no-go) and the conditions.
+Publish the decision as an artifact with the verdict
+on top, the pros and cons in two columns, the debate
+(the messages the advocate and critic sent each
+other, in order) and what I do next. Then wait for
+my decision.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Create an agent team to test the strategy in
+data/turning-55-brief.md before we spend on it.
+You are the Lead and the judge: do not argue.
+Spawn two teammates:
+- advocate, using the agent type growth-strategist:
+  argue FOR the strategy.
+- critic, using the agent type growth-analyst:
+  argue AGAINST it.
+- Both: cite data/campaign-results.csv,
+  strategy/personas.md, data/facts-2026.md or
+  data/compliance-checklist.md for every point;
+  message each other directly; rebut twice at most.
+- You: write strategy/turning-55-decision.md with
+  the pros, the cons, your verdict (go / go with
+  conditions / no-go) and the conditions.
+Publish the decision as an artifact with the verdict
+on top, the pros and cons in two columns, the debate
+(the messages the advocate and critic sent each
+other, in order) and what I do next. Then wait for
+my decision.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 15 · Prompt B</span><span class="ptool">Claude Code: the QA loop</span></div><button class="copy" type="button" data-copy="Clean up the debate team, then create a new agent
+team for Part 2 of data/turning-55-brief.md, using
+my decision. Spawn three teammates:
+- writer, agent type content-creator: rewrite
+  data/turning-55-draft.md into
+  content/turning-55/email.md and
+  content/turning-55/video-script.md.
+- qa-auditor: audit each piece with fact-check and
+  fin-compliance; write review/turning-55-qa.md, one
+  section per round, PASS or FAIL per check. On
+  FAIL, message the writer directly with the lines
+  to fix and audit again. Three rounds at most.
+- designer, agent type creative-designer: once a
+  piece passes, ask the writer for its headline and
+  make one thumbnail with alt text.
+- You, the Lead: never write or fix content. When
+  everything passes, submit each piece with
+  scripts/submit.mjs. Publish nothing.
+Publish the QA report as an artifact, one row per
+round, PASS or FAIL per check, in colour.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Clean up the debate team, then create a new agent
+team for Part 2 of data/turning-55-brief.md, using
+my decision. Spawn three teammates:
+- writer, agent type content-creator: rewrite
+  data/turning-55-draft.md into
+  content/turning-55/email.md and
+  content/turning-55/video-script.md.
+- qa-auditor: audit each piece with fact-check and
+  fin-compliance; write review/turning-55-qa.md, one
+  section per round, PASS or FAIL per check. On
+  FAIL, message the writer directly with the lines
+  to fix and audit again. Three rounds at most.
+- designer, agent type creative-designer: once a
+  piece passes, ask the writer for its headline and
+  make one thumbnail with alt text.
+- You, the Lead: never write or fix content. When
+  everything passes, submit each piece with
+  scripts/submit.mjs. Publish nothing.
+Publish the QA report as an artifact, one row per
+round, PASS or FAIL per check, in colour.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 15 · Prompt C</span><span class="ptool">Claude Code: shut down</span></div><button class="copy" type="button" data-copy="Ask every teammate to shut down, then clean up
+the team. Show me the final task list and how many
+QA rounds each piece needed. Publish it as an
+artifact.">Copy</button></header><pre>Ask every teammate to shut down, then clean up
+the team. Show me the final task list and how many
+QA rounds each piece needed. Publish it as an
+artifact.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Summarise the debate: the best point for, the best point against, and your verdict.</span><button class="copy small" type="button" data-copy="Summarise the debate: the best point for, the best point against, and your verdict.">Copy</button></li><li><span class="q">What failed in the first QA round, in plain English?</span><button class="copy small" type="button" data-copy="What failed in the first QA round, in plain English?">Copy</button></li><li><span class="q">How many rounds did each piece need, and why?</span><button class="copy small" type="button" data-copy="How many rounds did each piece need, and why?">Copy</button></li></ul></section></section>
+<footer>Built from the course source on 11 October 2026. Fictitious business
+for training only. © Tertiary Infotech Academy Pte Ltd.</footer>
+</div><script>
+const labs=[...document.querySelectorAll('.lab')];
+const links=[...document.querySelectorAll('nav a')];
+function show(){
+  const m=location.hash.match(/^#lab-(\d+)$/);
+  const n=m?m[1]:null;
+  document.getElementById('pick').hidden=!!n;
+  labs.forEach(s=>s.hidden=s.dataset.lab!==n);
+  links.forEach(a=>a.setAttribute('aria-current',
+    a.getAttribute('href')==='#lab-'+n));
+}
+addEventListener('hashchange',()=>{show();scrollTo(0,0)});
+show();addEventListener('load',()=>scrollTo(0,0));
+function fallback(t){const a=document.createElement('textarea');a.value=t;
+  a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);
+  a.select();try{document.execCommand('copy')}catch(e){}a.remove()}
+document.addEventListener('click',async e=>{
+  const b=e.target.closest('.copy');if(!b)return;
+  const t=b.dataset.copy;
+  try{await navigator.clipboard.writeText(t)}catch(err){fallback(t)}
+  const old=b.textContent;b.textContent='Copied ✓';b.classList.add('done');
+  setTimeout(()=>{b.textContent=old;b.classList.remove('done')},1800);
+});
+</script></body></html>

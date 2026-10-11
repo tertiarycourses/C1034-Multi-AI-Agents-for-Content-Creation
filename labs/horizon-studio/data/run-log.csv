@@ -1,0 +1,8 @@
+run,lab,pattern,output,agents,minutes,tokens_k,defects_caught_before_human,human_edits
+R01,Lab 5,Claude Code subagents,research + ideas,3,17,380,2,3
+R02,Lab 6,Claude Code subagents,personas,3,14,260,1,2
+R03,Lab 10,Claude Code agent team,week of social posts + images,3,24,860,5,2
+R04,Lab 11,Claude Code agent team,newsletter + landing page,4,26,920,4,2
+R05,Lab 12,Claude Code agent team,video script + storyboard,4,25,780,4,3
+R06,Lab 13,scheduled task,weekly growth report,1,6,90,0,1
+R07,baseline,"one agent, no review",week of social posts + images,1,12,210,0,9

@@ -1,0 +1,61 @@
+id,date,service,source,reach_by,message,chat_booked
+E040,2026-07-03,FAM,website form,WhatsApp,Want to save for two kids university fees.,yes
+E008,2026-07-05,EST,referral email,WhatsApp,My mother passed and we are sorting things out. Need help with a will and LPA for myself.,yes
+E015,2026-07-08,INS,website form,phone,I think I am over-insured. Too many policies from friends.,yes
+E018,2026-07-10,INS,website form,WhatsApp,I think I am over-insured. Too many policies from friends.,no
+E048,2026-07-10,INV,referral email,WhatsApp,Is it better to invest or pay down my HDB loan faster?,no
+E060,2026-07-10,FAM,referral email,phone,"Planning a career break next year, how much do we need?",yes
+E019,2026-07-14,FAM,website form,WhatsApp,Want to save for two kids university fees.,yes
+E017,2026-07-16,FAM,website form,WhatsApp,Want to save for two kids university fees.,yes
+E057,2026-07-16,RET,website form,email,When can I stop working? We are both 51.,yes
+E010,2026-07-18,EST,website form,WhatsApp,My mother passed and we are sorting things out. Need help with a will and LPA for myself.,yes
+E035,2026-07-20,INS,WhatsApp,email,New baby! Do we have enough insurance?,no
+E028,2026-07-23,RET,WhatsApp,email,Confused about CPF LIFE plans and the retirement sums.,yes
+E055,2026-07-23,RET,WhatsApp,email,I am 54 and not sure if my CPF will be enough. Can we talk?,yes
+E009,2026-07-24,RET,phone,WhatsApp,When can I stop working? We are both 51.,yes
+E043,2026-07-24,RET,website form,WhatsApp,Confused about CPF LIFE plans and the retirement sums.,yes
+E020,2026-07-25,TAX,referral email,WhatsApp,Can I top up my parents CPF for tax relief?,no
+E054,2026-07-25,TAX,website form,email,Can I top up my parents CPF for tax relief?,yes
+E039,2026-07-28,RET,website form,phone,When can I stop working? We are both 51.,yes
+E005,2026-08-02,INS,referral email,email,New baby! Do we have enough insurance?,yes
+E031,2026-08-02,RET,website form,WhatsApp,Confused about CPF LIFE plans and the retirement sums.,yes
+E012,2026-08-03,FAM,WhatsApp,phone,Want to save for two kids university fees.,yes
+E034,2026-08-03,RET,referral email,email,Confused about CPF LIFE plans and the retirement sums.,yes
+E037,2026-08-06,EST,referral email,email,My mother passed and we are sorting things out. Need help with a will and LPA for myself.,no
+E013,2026-08-07,RET,phone,email,Confused about CPF LIFE plans and the retirement sums.,no
+E022,2026-08-07,INV,website form,WhatsApp,Is it better to invest or pay down my HDB loan faster?,yes
+E053,2026-08-07,INS,website form,WhatsApp,I think I am over-insured. Too many policies from friends.,yes
+E056,2026-08-07,FAM,referral email,phone,Want to save for two kids university fees.,no
+E047,2026-08-10,RET,website form,WhatsApp,Confused about CPF LIFE plans and the retirement sums.,yes
+E052,2026-08-11,INS,phone,WhatsApp,New baby! Do we have enough insurance?,no
+E011,2026-08-12,RET,website form,email,When can I stop working? We are both 51.,no
+E001,2026-08-19,TAX,phone,WhatsApp,Can I top up my parents CPF for tax relief?,no
+E002,2026-08-19,TAX,referral email,WhatsApp,"Self-employed, high tax bill this year. Does SRS help?",yes
+E042,2026-08-19,INV,website form,email,"Just started work, want to invest S$500 a month but no idea how.",yes
+E021,2026-08-21,INV,referral email,WhatsApp,Is it better to invest or pay down my HDB loan faster?,yes
+E006,2026-08-23,INV,referral email,email,Is it better to invest or pay down my HDB loan faster?,yes
+E046,2026-08-24,EST,WhatsApp,email,How do CPF nominations work?,no
+E025,2026-08-25,INS,website form,WhatsApp,I think I am over-insured. Too many policies from friends.,yes
+E023,2026-08-27,INV,WhatsApp,WhatsApp,Is it better to invest or pay down my HDB loan faster?,yes
+E038,2026-09-01,RET,referral email,WhatsApp,I am 54 and not sure if my CPF will be enough. Can we talk?,yes
+E007,2026-09-04,TAX,WhatsApp,email,Can I top up my parents CPF for tax relief?,yes
+E026,2026-09-04,FAM,website form,email,Want to save for two kids university fees.,no
+E032,2026-09-04,EST,referral email,WhatsApp,My mother passed and we are sorting things out. Need help with a will and LPA for myself.,no
+E050,2026-09-05,RET,website form,WhatsApp,I am 54 and not sure if my CPF will be enough. Can we talk?,yes
+E016,2026-09-06,INS,phone,WhatsApp,New baby! Do we have enough insurance?,no
+E014,2026-09-08,TAX,website form,WhatsApp,Can I top up my parents CPF for tax relief?,yes
+E044,2026-09-08,TAX,WhatsApp,phone,Can I top up my parents CPF for tax relief?,no
+E049,2026-09-10,RET,website form,phone,Confused about CPF LIFE plans and the retirement sums.,yes
+E027,2026-09-12,INS,referral email,WhatsApp,New baby! Do we have enough insurance?,no
+E058,2026-09-12,INS,referral email,email,I think I am over-insured. Too many policies from friends.,no
+E024,2026-09-14,FAM,referral email,email,"Planning a career break next year, how much do we need?",no
+E029,2026-09-14,EST,phone,email,My mother passed and we are sorting things out. Need help with a will and LPA for myself.,yes
+E036,2026-09-14,INV,referral email,email,"Just started work, want to invest S$500 a month but no idea how.",no
+E059,2026-09-17,FAM,referral email,WhatsApp,"Planning a career break next year, how much do we need?",yes
+E030,2026-09-19,INV,website form,email,"Just started work, want to invest S$500 a month but no idea how.",yes
+E041,2026-09-23,RET,referral email,email,When can I stop working? We are both 51.,yes
+E051,2026-09-23,FAM,phone,email,Want to save for two kids university fees.,yes
+E033,2026-09-24,RET,WhatsApp,phone,I am 54 and not sure if my CPF will be enough. Can we talk?,yes
+E045,2026-09-27,FAM,phone,email,Want to save for two kids university fees.,yes
+E004,2026-09-28,INV,referral email,phone,"Just started work, want to invest S$500 a month but no idea how.",yes
+E003,2026-09-30,TAX,phone,phone,"Self-employed, high tax bill this year. Does SRS help?",no

@@ -1,0 +1,41 @@
+id,first_name,last_name,email,source,joined,consent,unsubscribed
+N001,Kelvin,Koh,YOUR.NAME+kelvinkoh1@gmail.com,checklist,2026-07-02,yes,no
+N002,Grace,Pillai,YOUR.NAME+gracepillai2@gmail.com,footer sign-up,2026-06-02,yes,no
+N003,Mei Ling,Lee,YOUR.NAME+meilee3@gmail.com,free chat,2026-05-08,yes,no
+N004,Ben,Goh,YOUR.NAME+bengoh4@gmail.com,footer sign-up,2026-05-16,no,no
+N005,Daniel,Koh,YOUR.NAME+danielkoh5@gmail.com,free chat,2026-05-14,yes,no
+N006,Priya,Teo,YOUR.NAME+priyateo6@gmail.com,checklist,2026-05-30,yes,no
+N007,Farid,Menon,YOUR.NAME+faridmenon7@gmail.com,footer sign-up,2026-09-09,yes,no
+N008,Ben,Goh,YOUR.NAME+bengoh8@gmail.com,checklist,2026-08-13,yes,yes
+N009,Wei Ling,Yusof,YOUR.NAME+weiyusof9@gmail.com,checklist,2026-07-25,yes,no
+N010,Hui Min,Ong,YOUR.NAME+huiong10@gmail.com,footer sign-up,2026-07-19,yes,no
+N011,Priya,Ali,YOUR.NAME+priyaali11@gmail.com,checklist,2026-07-14,no,no
+N012,Kelvin,Teo,YOUR.NAME+kelvinteo12@gmail.com,footer sign-up,2026-09-28,yes,no
+N013,Daniel,Chua,YOUR.NAME+danielchua13@gmail.com,free chat,2026-09-10,yes,no
+N014,Arjun,Nair,YOUR.NAME+arjunnair14@gmail.com,footer sign-up,2026-09-27,yes,no
+N015,Amelia,Lim,YOUR.NAME+amelialim15@gmail.com,free chat,2026-07-17,yes,no
+N016,Siti,Rahman,YOUR.NAME+sitirahman16@gmail.com,footer sign-up,2026-08-27,yes,no
+N017,Kelvin,Lim,YOUR.NAME+kelvinlim17@gmail.com,free chat,2026-07-24,yes,no
+N018,Joanne,Goh,YOUR.NAME+joannegoh18@gmail.com,free chat,2026-07-12,yes,no
+N019,Rachel,Goh,YOUR.NAME+rachelgoh19@gmail.com,footer sign-up,2026-05-18,no,no
+N020,Wei Ling,Teo,YOUR.NAME+weiteo20@gmail.com,footer sign-up,2026-08-07,yes,no
+N021,Priya,Teo,YOUR.NAME+priyateo21@gmail.com,free chat,2026-05-28,yes,no
+N022,Nadia,Rahman,YOUR.NAME+nadiarahman22@gmail.com,checklist,2026-08-16,yes,yes
+N023,Aisha,Ali,YOUR.NAME+aishaali23@gmail.com,footer sign-up,2026-06-26,yes,no
+N024,Kelvin,Teo,YOUR.NAME+kelvinteo24@gmail.com,footer sign-up,2026-06-13,yes,no
+N025,Priya,Lee,YOUR.NAME+priyalee25@gmail.com,checklist,2026-05-24,yes,no
+N026,Priya,Teo,YOUR.NAME+priyateo26@gmail.com,checklist,2026-06-11,yes,no
+N027,Hui Min,Tan,YOUR.NAME+huitan27@gmail.com,footer sign-up,2026-06-17,no,no
+N028,Wei Ling,Teo,YOUR.NAME+weiteo28@gmail.com,footer sign-up,2026-06-24,yes,no
+N029,Nadia,Pillai,YOUR.NAME+nadiapillai29@gmail.com,free chat,2026-08-30,yes,no
+N030,Grace,Lee,YOUR.NAME+gracelee30@gmail.com,footer sign-up,2026-05-09,yes,no
+N031,Jason,Teo,YOUR.NAME+jasonteo31@gmail.com,checklist,2026-06-10,yes,no
+N032,Priya,Lee,YOUR.NAME+priyalee32@gmail.com,checklist,2026-07-17,yes,no
+N033,Mei Ling,Ng,YOUR.NAME+meing33@gmail.com,free chat,2026-07-22,no,no
+N034,Ben,Ong,YOUR.NAME+benong34@gmail.com,checklist,2026-09-14,yes,no
+N035,Joanne,Ali,YOUR.NAME+joanneali35@gmail.com,checklist,2026-09-28,yes,yes
+N036,Aisha,Lee,YOUR.NAME+aishalee36@gmail.com,checklist,2026-09-13,yes,no
+N037,Daniel,Koh,YOUR.NAME+danielkoh37@gmail.com,checklist,2026-09-25,yes,no
+N038,Mei Ling,Lee,YOUR.NAME+meilee38@gmail.com,checklist,2026-05-10,no,no
+N039,Ethan,Ali,YOUR.NAME+ethanali39@gmail.com,checklist,2026-07-18,yes,no
+N040,Amelia,Lee,YOUR.NAME+amelialee40@gmail.com,checklist,2026-06-12,yes,no

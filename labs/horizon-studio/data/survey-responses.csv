@@ -1,0 +1,151 @@
+id,age_band,life_stage,top_worry,preferred_channel,preferred_format,best_time,trust_driver,heard_of_horizon,would_book_chat
+S001,30-39,single professional,investing,Facebook,short video,weekend morning,no hard sell,no,maybe
+S002,30-39,single professional,investing,Facebook,article,weekday evening,plain English,yes,no
+S003,21-29,young family,insurance,YouTube,short video,weekend evening,plain English,no,yes
+S004,21-29,young family,insurance,TikTok,short video,weekend evening,no hard sell,no,maybe
+S005,40-49,established family,retirement,Email newsletter,article,weekend evening,plain English,no,no
+S006,30-39,young family,insurance,LinkedIn,short video,weekend morning,no hard sell,yes,no
+S007,30-39,young family,retirement,Facebook,checklist,weekday lunch,reviews,no,maybe
+S008,50-59,pre-retiree,retirement,Facebook,email tip,weekday evening,plain English,no,maybe
+S009,40-49,established family,retirement,LinkedIn,checklist,weekend morning,no hard sell,no,maybe
+S010,30-39,single professional,investing,LinkedIn,short video,weekend evening,plain English,yes,maybe
+S011,30-39,business owner,tax,LinkedIn,checklist,weekend evening,fee transparency,no,maybe
+S012,21-29,young family,retirement,Instagram,article,weekend evening,qualifications,yes,yes
+S013,40-49,established family,estate,Facebook,article,weekend evening,plain English,no,no
+S014,21-29,single professional,investing,LinkedIn,carousel,weekend evening,qualifications,no,maybe
+S015,40-49,established family,estate,YouTube,checklist,weekday evening,qualifications,yes,yes
+S016,30-39,young family,education,Facebook,article,weekday evening,reviews,yes,no
+S017,30-39,young family,insurance,LinkedIn,short video,weekday evening,qualifications,yes,maybe
+S018,21-29,single professional,tax,TikTok,short video,weekend evening,fee transparency,no,maybe
+S019,60+,retiree,estate,Facebook,webinar,weekday lunch,reviews,yes,yes
+S020,30-39,young family,retirement,YouTube,article,weekday evening,no hard sell,no,maybe
+S021,30-39,single professional,tax,Facebook,checklist,weekend evening,plain English,no,yes
+S022,30-39,young family,education,LinkedIn,checklist,weekday lunch,plain English,no,no
+S023,30-39,young family,education,Facebook,short video,weekend evening,qualifications,yes,yes
+S024,30-39,young family,retirement,YouTube,article,weekend evening,plain English,no,maybe
+S025,50-59,business owner,tax,Facebook,email tip,weekday evening,qualifications,yes,maybe
+S026,50-59,business owner,tax,Email newsletter,email tip,weekday evening,no hard sell,yes,no
+S027,30-39,young family,insurance,Facebook,checklist,weekend morning,plain English,no,yes
+S028,50-59,pre-retiree,cpf,Facebook,webinar,weekday lunch,qualifications,no,maybe
+S029,30-39,single professional,investing,YouTube,checklist,weekend evening,plain English,no,maybe
+S030,21-29,single professional,investing,LinkedIn,short video,weekend evening,reviews,no,maybe
+S031,30-39,single professional,investing,YouTube,checklist,weekend evening,no hard sell,yes,maybe
+S032,21-29,single professional,investing,Instagram,article,weekday lunch,fee transparency,no,maybe
+S033,40-49,established family,insurance,YouTube,article,weekend evening,fee transparency,no,no
+S034,40-49,established family,education,YouTube,checklist,weekend morning,fee transparency,no,no
+S035,40-49,business owner,tax,Facebook,checklist,weekend morning,fee transparency,no,no
+S036,60+,retiree,estate,Email newsletter,article,weekend evening,plain English,yes,no
+S037,40-49,established family,estate,Facebook,checklist,weekend evening,reviews,yes,no
+S038,40-49,established family,insurance,Facebook,checklist,weekday lunch,fee transparency,no,no
+S039,30-39,young family,housing,Facebook,article,weekday lunch,qualifications,yes,maybe
+S040,21-29,single professional,tax,YouTube,short video,weekend evening,fee transparency,yes,maybe
+S041,50-59,pre-retiree,retirement,Facebook,email tip,weekday lunch,no hard sell,yes,yes
+S042,30-39,business owner,investing,LinkedIn,checklist,weekday evening,plain English,yes,yes
+S043,30-39,single professional,investing,YouTube,checklist,weekday evening,plain English,yes,yes
+S044,21-29,single professional,tax,YouTube,short video,weekend morning,qualifications,no,yes
+S045,30-39,young family,education,YouTube,short video,weekday evening,qualifications,yes,maybe
+S046,50-59,pre-retiree,cpf,Email newsletter,article,weekend morning,no hard sell,no,maybe
+S047,50-59,pre-retiree,retirement,Email newsletter,email tip,weekend evening,fee transparency,no,maybe
+S048,50-59,pre-retiree,retirement,YouTube,email tip,weekend morning,no hard sell,yes,no
+S049,30-39,business owner,tax,Facebook,checklist,weekend morning,reviews,yes,no
+S050,30-39,business owner,retirement,LinkedIn,checklist,weekday lunch,qualifications,yes,no
+S051,50-59,pre-retiree,retirement,Email newsletter,email tip,weekend evening,plain English,no,yes
+S052,21-29,single professional,tax,Instagram,short video,weekday evening,no hard sell,yes,no
+S053,40-49,business owner,investing,Email newsletter,webinar,weekend evening,no hard sell,no,maybe
+S054,50-59,pre-retiree,estate,Facebook,email tip,weekday evening,fee transparency,no,maybe
+S055,30-39,young family,retirement,Facebook,short video,weekday lunch,fee transparency,no,maybe
+S056,60+,retiree,cpf,Email newsletter,webinar,weekday evening,plain English,no,maybe
+S057,50-59,pre-retiree,cpf,Email newsletter,webinar,weekend evening,fee transparency,no,maybe
+S058,40-49,established family,education,LinkedIn,article,weekday evening,qualifications,no,maybe
+S059,30-39,young family,retirement,LinkedIn,article,weekend evening,reviews,no,maybe
+S060,50-59,pre-retiree,cpf,Facebook,webinar,weekend morning,qualifications,yes,maybe
+S061,40-49,business owner,tax,Email newsletter,checklist,weekend evening,qualifications,yes,maybe
+S062,60+,retiree,estate,Facebook,email tip,weekday lunch,reviews,no,maybe
+S063,50-59,pre-retiree,retirement,Email newsletter,article,weekend morning,no hard sell,yes,yes
+S064,50-59,pre-retiree,estate,Email newsletter,webinar,weekend evening,no hard sell,no,no
+S065,40-49,established family,retirement,YouTube,webinar,weekday lunch,plain English,yes,maybe
+S066,40-49,established family,estate,Facebook,webinar,weekday lunch,reviews,no,no
+S067,40-49,established family,insurance,LinkedIn,webinar,weekend morning,plain English,no,yes
+S068,21-29,young family,insurance,LinkedIn,short video,weekday lunch,plain English,no,no
+S069,40-49,established family,retirement,LinkedIn,webinar,weekday lunch,no hard sell,yes,maybe
+S070,21-29,single professional,investing,YouTube,short video,weekend morning,no hard sell,yes,no
+S071,30-39,young family,housing,Facebook,checklist,weekend morning,no hard sell,no,maybe
+S072,50-59,pre-retiree,retirement,YouTube,email tip,weekday evening,fee transparency,no,yes
+S073,50-59,business owner,retirement,Facebook,email tip,weekend evening,no hard sell,yes,maybe
+S074,30-39,young family,insurance,YouTube,article,weekday lunch,plain English,yes,yes
+S075,60+,retiree,estate,Facebook,article,weekday evening,qualifications,yes,maybe
+S076,21-29,young family,insurance,LinkedIn,article,weekday lunch,reviews,yes,yes
+S077,60+,retiree,estate,Facebook,article,weekend evening,fee transparency,yes,yes
+S078,50-59,pre-retiree,cpf,LinkedIn,email tip,weekend evening,no hard sell,yes,yes
+S079,40-49,established family,retirement,Email newsletter,article,weekend evening,no hard sell,no,maybe
+S080,40-49,established family,insurance,LinkedIn,checklist,weekend morning,qualifications,no,yes
+S081,30-39,young family,insurance,YouTube,article,weekend evening,qualifications,no,no
+S082,40-49,established family,retirement,LinkedIn,article,weekday lunch,no hard sell,no,no
+S083,50-59,pre-retiree,cpf,YouTube,webinar,weekend morning,plain English,no,maybe
+S084,40-49,business owner,tax,Facebook,article,weekday lunch,plain English,no,maybe
+S085,21-29,single professional,tax,YouTube,carousel,weekend morning,no hard sell,yes,no
+S086,50-59,pre-retiree,cpf,Email newsletter,email tip,weekday lunch,plain English,no,no
+S087,60+,retiree,estate,Email newsletter,webinar,weekend evening,plain English,no,maybe
+S088,60+,pre-retiree,estate,Facebook,email tip,weekend morning,fee transparency,yes,maybe
+S089,30-39,young family,housing,YouTube,short video,weekday evening,no hard sell,yes,maybe
+S090,21-29,single professional,investing,Instagram,short video,weekday lunch,no hard sell,no,no
+S091,50-59,pre-retiree,cpf,YouTube,article,weekday lunch,plain English,no,maybe
+S092,21-29,single professional,investing,LinkedIn,carousel,weekend morning,fee transparency,yes,maybe
+S093,21-29,single professional,retirement,YouTube,short video,weekday lunch,qualifications,yes,maybe
+S094,30-39,single professional,tax,Email newsletter,article,weekday evening,plain English,no,maybe
+S095,30-39,young family,insurance,Facebook,article,weekend evening,plain English,no,no
+S096,21-29,young family,education,LinkedIn,short video,weekday lunch,no hard sell,yes,no
+S097,30-39,business owner,tax,LinkedIn,checklist,weekday evening,reviews,no,maybe
+S098,30-39,young family,insurance,Facebook,short video,weekday evening,plain English,yes,maybe
+S099,21-29,single professional,investing,YouTube,short video,weekend evening,fee transparency,no,no
+S100,21-29,single professional,investing,YouTube,article,weekday evening,qualifications,yes,maybe
+S101,21-29,single professional,investing,Instagram,carousel,weekday evening,no hard sell,no,maybe
+S102,60+,retiree,cpf,Email newsletter,email tip,weekend evening,no hard sell,no,no
+S103,40-49,business owner,tax,YouTube,article,weekday evening,plain English,no,maybe
+S104,40-49,business owner,retirement,Email newsletter,article,weekday evening,no hard sell,no,maybe
+S105,40-49,established family,retirement,YouTube,article,weekday lunch,no hard sell,no,no
+S106,60+,retiree,estate,Email newsletter,email tip,weekend evening,no hard sell,no,yes
+S107,21-29,single professional,retirement,LinkedIn,short video,weekend evening,plain English,yes,yes
+S108,60+,retiree,cpf,Facebook,webinar,weekend morning,no hard sell,yes,no
+S109,30-39,single professional,investing,Facebook,short video,weekend evening,no hard sell,yes,maybe
+S110,40-49,established family,retirement,YouTube,article,weekend morning,no hard sell,no,no
+S111,30-39,single professional,investing,LinkedIn,short video,weekend morning,plain English,yes,yes
+S112,30-39,young family,insurance,YouTube,article,weekend morning,fee transparency,yes,maybe
+S113,30-39,young family,education,Facebook,checklist,weekend evening,reviews,no,maybe
+S114,40-49,business owner,tax,Facebook,checklist,weekday lunch,plain English,no,maybe
+S115,40-49,established family,retirement,Email newsletter,checklist,weekday evening,fee transparency,no,no
+S116,40-49,established family,retirement,LinkedIn,article,weekday lunch,fee transparency,no,maybe
+S117,50-59,business owner,retirement,Facebook,article,weekday evening,no hard sell,yes,no
+S118,50-59,pre-retiree,retirement,LinkedIn,article,weekday lunch,qualifications,no,no
+S119,21-29,single professional,retirement,YouTube,short video,weekday lunch,plain English,no,yes
+S120,50-59,pre-retiree,retirement,LinkedIn,article,weekend morning,no hard sell,yes,yes
+S121,21-29,young family,retirement,YouTube,short video,weekend evening,qualifications,no,maybe
+S122,60+,retiree,estate,Facebook,email tip,weekday lunch,plain English,yes,no
+S123,50-59,pre-retiree,cpf,Facebook,article,weekend morning,plain English,no,yes
+S124,21-29,single professional,tax,Instagram,short video,weekend evening,plain English,no,yes
+S125,21-29,single professional,investing,LinkedIn,article,weekend morning,plain English,no,yes
+S126,21-29,single professional,investing,Instagram,carousel,weekend morning,no hard sell,no,maybe
+S127,30-39,business owner,investing,LinkedIn,short video,weekday evening,reviews,no,no
+S128,50-59,pre-retiree,cpf,YouTube,article,weekday evening,reviews,no,maybe
+S129,40-49,established family,retirement,YouTube,article,weekend morning,no hard sell,no,maybe
+S130,21-29,young family,housing,Instagram,carousel,weekend morning,no hard sell,no,maybe
+S131,40-49,established family,retirement,Email newsletter,checklist,weekday evening,no hard sell,yes,maybe
+S132,50-59,pre-retiree,cpf,Email newsletter,email tip,weekday evening,no hard sell,yes,yes
+S133,30-39,young family,retirement,LinkedIn,short video,weekday lunch,reviews,no,no
+S134,30-39,single professional,tax,YouTube,checklist,weekday evening,reviews,no,maybe
+S135,21-29,single professional,investing,YouTube,carousel,weekday lunch,no hard sell,no,no
+S136,40-49,established family,retirement,LinkedIn,checklist,weekend evening,no hard sell,no,no
+S137,50-59,pre-retiree,cpf,YouTube,webinar,weekend evening,reviews,no,maybe
+S138,30-39,young family,housing,YouTube,short video,weekday evening,qualifications,no,maybe
+S139,40-49,business owner,tax,Facebook,article,weekday lunch,plain English,yes,maybe
+S140,40-49,established family,retirement,Facebook,webinar,weekday evening,qualifications,no,yes
+S141,21-29,single professional,tax,YouTube,short video,weekend evening,qualifications,yes,no
+S142,40-49,established family,education,Email newsletter,article,weekday lunch,qualifications,no,yes
+S143,30-39,young family,retirement,Facebook,short video,weekend morning,reviews,no,yes
+S144,30-39,young family,housing,YouTube,article,weekend morning,plain English,no,no
+S145,50-59,pre-retiree,retirement,Email newsletter,email tip,weekend evening,reviews,yes,maybe
+S146,40-49,established family,insurance,LinkedIn,checklist,weekend morning,plain English,no,yes
+S147,30-39,young family,housing,Email newsletter,article,weekday lunch,no hard sell,no,yes
+S148,30-39,single professional,retirement,Facebook,article,weekday lunch,reviews,no,no
+S149,40-49,business owner,tax,LinkedIn,webinar,weekend evening,plain English,no,maybe
+S150,40-49,established family,retirement,YouTube,checklist,weekday evening,plain English,no,maybe
